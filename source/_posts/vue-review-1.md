@@ -2,10 +2,10 @@
 title: 那些年学的vue（一）
 date: 2018-01-16 13:13:29
 tags:
-- vue
+- Vue
 categories:
 - web前端
-- vue
+- Vue
 ---
 
 ### 前言
