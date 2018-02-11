@@ -1,6 +1,7 @@
 ---
 title: Webpack打包优化指南
 date: 2018-01-27 12:50:40
+preview: http://blog.scarboroughcoral.top/2018/01/27/webpack-optimize/top.jpg
 tags:
 - webpack
 categories:
