@@ -72,7 +72,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-
-     type: git
-     repo: git@github.com:ScarboroughCoral/ScarboroughCoral.github.io.git
-     branch: master
+  type: git
+  repo: git@github.com:ScarboroughCoral/MyBlog.git
+  branch: master
