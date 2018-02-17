@@ -7,6 +7,12 @@ categories:
 - SQL
 ---
 
+### 先show一下美化过的Ubuntu
+
+![](mysql-one/show.png)
+
+### 进入正题
+
 > 对于数据库，去年的时候对`mysql`过了一遍，但是感觉忘得差不多了。然后最近练习了一些比较简单的题目，写一篇博客来记录一下。我用的是`CodeWars`这个网站，这是我的[CodeWars地址](https://www.codewars.com/users/Scarborough_Coral)。练习的都是一些`5kyu`以下的，重点是想再复习一下语法和操作（4kyu的可能不会，没敢尝试！）。
 
 ### 0x01.8kyu-7kyu
