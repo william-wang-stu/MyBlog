@@ -20,7 +20,7 @@ live2d:
     width: 150
     height: 300
   mobile:
-    show: true
+    show: false
 # Set to true, if you want to fully override the default configuration.
 # Useful if you don't want to inherit the theme _config.yml configurations.
 override: false
