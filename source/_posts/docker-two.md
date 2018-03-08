@@ -1,18 +1,18 @@
 ---
 title: 多容器APP之Compose学习笔记(二)
-date: 2018-03-08 14:45:51
+date: 2018-03-07 13:07:14
 tags:
 - docker
 - docker-compose
 categories:
 - docker
---- 
+---
 
 ![](docker-two/top.jpg)
 
 ### 前言
 
-这篇博客已经不能称之为学习笔记了，因为官方文档实在是枯燥，于是我就直接对着某个实例上了。本次我搭建了一个可以复用的环境，`Mysql+Tomcat+Nginx`可能这样搭配有点不合理，或许，毕竟对这方面了解的不多，不过搭建出来确实能用。而且能够复用，你只需要将你的JavaWeb工程打包成War文件放到Tomcat的webapps目录下就行了。
+已经不能称之为学习笔记了，因为官方文档实在是枯燥，于是我就直接对着某个实例上了。本次我搭建了一个可以复用的环境，`Mysql+Tomcat+Nginx`可能这样搭配有点不合理，或许，毕竟对这方面了解的不多，不过搭建出来确实能用。而且能够复用，你只需要将你的JavaWeb工程打包成War文件放到Tomcat的webapps目录下就行了。
 
 ### Compose服务配置
 
