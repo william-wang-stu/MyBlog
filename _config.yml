@@ -10,16 +10,10 @@ author: Scarborough_Coral
 language: zh-Hans
 timezone:
 
-# 百度推送
-baidu_url_submit:
-  count: 3 ## 比如3，代表提交最新的三个链接
-  host: blog.scarboroughcoral.top ## 在百度站长平台中注册的域名
-  token: token ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: blog.scarboroughcoral.top
+url: http://yoursite.com
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: :category/:title/
@@ -81,4 +75,3 @@ deploy:
   type: git
   repo: git@github.com:ScarboroughCoral/MyBlog.git
   branch: master
-  type: baidu_url_submitter ## 这是新加的
