@@ -390,8 +390,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appid:  CcoyPsPhTuwfmSVuQdIenig2-gzGzoHsz # your leancloud application appid
+  appkey: JvJlbM7kU91oa6MPyQ9V5zJH # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -429,8 +429,9 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
+baidushare:
+ type: slide
+ baidushare: true
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -544,9 +545,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  appid:  CcoyPsPhTuwfmSVuQdIenig2-gzGzoHsz # your leancloud application appid
+  appkey: JvJlbM7kU91oa6MPyQ9V5zJH # your leancloud application appkey
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -562,7 +563,7 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: true
+  enable: false
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i> 访问人数
