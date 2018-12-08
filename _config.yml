@@ -77,9 +77,10 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: gal
-theme: next
+# theme: next
 # theme: believe
 # theme: alpha-dust
+theme: diaspora
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
