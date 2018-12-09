@@ -1,5 +1,5 @@
 ---
-title: 学习 Linux/\*BSD/Unix 的 30 个最佳在线文档
+title: 学习 Linux/*BSD/Unix 的 30 个最佳在线文档
 date: 2018-12-09 21:47:58
 cover: https://www.linuxidc.com/upload/2012_10/12100621247704.jpg
 tags:
