@@ -4,7 +4,6 @@ date: 2018-10-08 15:22:14
 tags:
 - Windows API
 - C
-cover: http://d.5857.com/win10_170307/001.jpg
 categories:
 - Windows API
 - C
