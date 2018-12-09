@@ -14,7 +14,7 @@ categories:
 
 ### 前言
 
-今天谈一谈双系统的实现原理，其实写这篇博客的时候我还没怎么彻底搞懂，不过在写的过程中会边思考边写，因为借鉴了[CyC2018/Interview-Notebook](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Linux.md)，这个文档也是借鉴了一本书`《鸟哥的Linux私房菜》`，我就借花献佛，水一水这篇了。
+今天谈一谈双系统的实现原理，其实写这篇博客的时候我还没怎么彻底搞懂，不过在写的过程中会边思考边写，因为借鉴了[CyC2018/Interview-Notebook](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Linux.md)，这个文档也是借鉴了一本书`《鸟哥的Linux私房菜》`。
 
 ### 双系统
 
