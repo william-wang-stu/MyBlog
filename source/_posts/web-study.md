@@ -1,7 +1,7 @@
 ---
 title: web前端入门建议
 date: 2018-01-14 10:46:28
-cover: http://www.houtouke.com/wp-content/uploads/2018/07/snipaste_20180704_180200.jpg
+cover: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
 tags:
 - web入门
 categories:
