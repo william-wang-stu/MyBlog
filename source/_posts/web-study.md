@@ -1,7 +1,7 @@
 ---
 title: web前端入门建议
 date: 2018-01-14 10:46:28
-cover: http://blog.cyt-rain.cn/2016/08/01/life/img-2.png
+cover: https://image-store.slidesharecdn.com/d5bc6d82-6a1d-4367-b384-7506be709e95-original.png
 tags:
 - web入门
 categories:
