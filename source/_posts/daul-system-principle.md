@@ -3,9 +3,7 @@ title: 双系统的实现原理
 date: 2018-03-23 15:01:57
 cover: https://pic.taifua.com/Picture/website/ubuntu/qq.png
 tags:
-- OS
-categories:
-- OS
+- Operating System
 ---
 
 ![](daul-system-principle/top.jpg)

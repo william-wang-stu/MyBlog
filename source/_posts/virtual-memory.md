@@ -2,7 +2,7 @@
 title: 通用操作系统原理之虚拟内存
 date: 2018-12-09 12:51:13
 tags:
-- OS
+- Operating System
 
 cover: http://p3.pstatp.com/large/4e7d000182ef84ab1986
 ---
