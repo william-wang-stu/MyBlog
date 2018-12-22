@@ -1,6 +1,8 @@
 ---
 title: Scarborough_Coral's Home
 date: 2018-02-13 09:54:22
+type: "about"
+layout: "about"
 ---
 
 #### 为什么是Scarborough_Coral

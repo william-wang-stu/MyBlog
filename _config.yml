@@ -81,7 +81,8 @@ pagination_dir: page
 # theme: next
 # theme: believe
 # theme: alpha-dust
-theme: diaspora
+# theme: diaspora
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
