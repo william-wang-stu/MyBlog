@@ -60,8 +60,11 @@ LRESULT CALLBACK MyWinProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
 
 ### 代码
 
+全部代码如下：
+
 ```C
-#include<windows.h>
+
+#include <windows.h>
 
 LRESULT CALLBACK MyWinProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
 	switch (msg)
