@@ -1,11 +1,10 @@
 ---
 title: web前端入门建议
 date: 2018-01-14 10:46:28
-cover: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
+img: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
 tags:
-- web入门
-categories:
-- web前端
+- Web 前端
+categories: Web 前端
 ---
 
 ![](web-study/web-study.jpg)

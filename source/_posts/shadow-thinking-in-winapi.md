@@ -1,13 +1,11 @@
 ---
 title: 浅谈Windows API
 date: 2018-10-08 15:22:14
-cover: https://stmed.net/sites/default/files/windows-8-wallpapers-30803-8681077.jpg
+img: https://stmed.net/sites/default/files/windows-8-wallpapers-30803-8681077.jpg
 tags:
 - Windows API
 - C
-categories:
-- Windows API
-- C
+categories: Windows API
 ---
 
 <blockquote class="blockquote-center">尽管SEDF_JKHJKE这种变量定义形式很烂，但死磕一次。</blockquote>

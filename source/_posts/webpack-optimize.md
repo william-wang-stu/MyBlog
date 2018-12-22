@@ -1,7 +1,7 @@
 ---
 title: Webpack打包优化指南
 date: 2018-01-27 12:50:40
-cover: https://yami.io/content/images/2016/11/webpack.png
+img: https://yami.io/content/images/2016/11/webpack.png
 tags:
 - webpack
 categories:

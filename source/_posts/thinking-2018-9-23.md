@@ -1,11 +1,10 @@
 ---
 title: 操作系统——关于新的思考和新的目标
 date: 2018-09-23 17:38:00
-cover: https://www.deepin.org/wp-content/uploads/2015/12/03.jpg
+img: https://www.deepin.org/wp-content/uploads/2015/12/03.jpg
 tags:
-- OS
-categories:
-- OS
+- Operating System
+categories: Operating System
 ---
 
 ### 2018年9月23日的思考——新的目标

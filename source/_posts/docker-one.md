@@ -1,11 +1,11 @@
 ---
 title: Docker入门思考
 date: 2018-02-15 21:39:34
-cover: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
+img: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
 tags:
-- docker
+- Docker
 categories:
-- docker
+- Docker
 ---
 
 ### Docker的本地博客
