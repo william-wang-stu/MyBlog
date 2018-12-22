@@ -4,8 +4,8 @@
 
 # Site
 title: Scarborough_Coral's Home
-subtitle: "戒骄戒躁"
-description: "不忘初心"
+subtitle: "靡不有初，鲜克有终。"
+description: "长坂坡上草木腥，沧江一梦镜花影。"
 author: Scarborough_Coral
 language: zh-CN
 timezone:
@@ -14,6 +14,11 @@ timezone:
 search:
   path: search.xml
   field: post
+
+# 中文连接
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
 
 # RSS
 feed:

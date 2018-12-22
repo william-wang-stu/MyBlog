@@ -3,10 +3,10 @@ title: Webpack打包优化指南
 date: 2018-01-27 12:50:40
 img: https://yami.io/content/images/2016/11/webpack.png
 tags:
-- webpack
+- Webpack
+-  Web 前端
 categories:
-- web前端
-- webpack
+- Web 前端
 ---
 
 ![](webpack-optimize/top.jpg)
