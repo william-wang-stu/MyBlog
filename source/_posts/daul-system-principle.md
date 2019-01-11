@@ -4,6 +4,7 @@ date: 2018-03-23 15:01:57
 tags:
 - Operating System
 img: https://pic.taifua.com/Picture/website/ubuntu/qq.png
+categories: Operating System
 ---
 
 ![](daul-system-principle/top.jpg)

@@ -1,9 +1,9 @@
 ---
 title: 操作系统开发平台
 date: 2018-12-09 20:03:25
-img: https://images.techhive.com/images/article/2014/11/docker_linux-100530817-primary.idge.jpg
 tags:
 - Operating System
+img: https://images.techhive.com/images/article/2014/11/docker_linux-100530817-primary.idge.jpg
 categories: Operating System
 ---
 

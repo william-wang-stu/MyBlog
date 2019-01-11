@@ -1,0 +1,3 @@
+[submodule "themes/matery"]
+	path = themes/matery
+	url = git@github.com:ScarboroughCoral/hexo-theme-matery.git
