@@ -48,8 +48,8 @@ baidu_url_submit:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.scarboroughcoral.top
 root: /
-# permalink: :year/:month/:day/:title/
-permalink: :category/:title/
+permalink: :year/:month/:day/:title/
+# permalink: :category/:title/
 permalink_defaults:
 # Directory
 source_dir: source
@@ -104,11 +104,11 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: gal
-# theme: next
+theme: next
 # theme: believe
 # theme: alpha-dust
 # theme: diaspora
-theme: matery
+# theme: matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

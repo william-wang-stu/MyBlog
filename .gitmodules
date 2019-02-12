@@ -1,3 +1,6 @@
 [submodule "themes/matery"]
 	path = themes/matery
 	url = git@github.com:ScarboroughCoral/hexo-theme-matery.git
+[submodule "themes/next"]
+	path = themes/next
+	url = git@github.com:ScarboroughCoral/hexo-theme-next.git
