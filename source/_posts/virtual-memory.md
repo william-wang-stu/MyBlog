@@ -5,10 +5,17 @@ top: true
 tags:
 - Operating System
 categories: Operating System
-img: http://p3.pstatp.com/large/4e7d000182ef84ab1986
+photo: https://www.desktop-background.com/download/o/2014/04/25/752494_apple-logo-christmas-windows-10-wallpapers_1920x1080_h.jpg
 ---
 
-## 虚拟内存
+
+{% note default %}
+理论驱动实践，实践驱动理论。
+{% endnote %}
+
+<!-- more -->
+
+### 虚拟内存问题概述
 
 如果你了解过一点虚拟内存的知识，这篇笔记可能会让你更深入的理解。
 

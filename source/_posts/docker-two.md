@@ -1,7 +1,7 @@
 ---
 title: 多容器APP之Compose学习笔记(二)
 date: 2018-03-07 13:07:14
-img: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
+photo: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
 tags:
 - Docker
 - Docker-Compose
@@ -9,13 +9,18 @@ categories:
 - Docker
 ---
 
-![](docker-two/top.jpg)
+
+{% note default %}
+人类善用工具，是因为懒。
+{% endnote %}
+
+<!-- more -->
 
 ### 前言
 
 已经不能称之为学习笔记了，因为官方文档实在是枯燥，于是我就直接对着某个实例上了。本次我搭建了一个可以复用的环境，`Mysql+Tomcat+Nginx`可能这样搭配有点不合理，或许，毕竟对这方面了解的不多，不过搭建出来确实能用。而且能够复用，你只需要将你的JavaWeb工程打包成War文件放到Tomcat的webapps目录下就行了。
 
-### Compose服务配置
+### Compose服务配置 
 
 这个环境中需要三层服务，一是数据库层，二是app层，三是nginx用作代理层。因为是比较小的项目所以没有做反向代理的配置，但是此环境可用于扩展，将Tomcat部署到不同的模拟服务器下，并用nginx反向代理。这是可扩展的。下面是我的目录结构：
 

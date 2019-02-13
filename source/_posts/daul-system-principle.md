@@ -3,13 +3,16 @@ title: 双系统的实现原理
 date: 2018-03-23 15:01:57
 tags:
 - Operating System
-img: https://pic.taifua.com/Picture/website/ubuntu/qq.png
+photo: https://pic.taifua.com/Picture/website/ubuntu/qq.png
 categories: Operating System
 ---
 
-![](daul-system-principle/top.jpg)
 
-<blockquote class="blockquote-center">硬件令机器变快。软件则把快机器搞慢。</blockquote>
+{% note default %}
+硬件令机器变快。软件则把快机器搞慢。
+{% endnote %}
+
+<!-- more -->
 
 ### 前言
 

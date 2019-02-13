@@ -1,13 +1,17 @@
 ---
 title: web前端入门建议
 date: 2018-01-14 10:46:28
-img: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
+photo: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
 tags:
 - Web 前端
 categories: Web 前端
 ---
 
-![](web-study/web-study.jpg)
+{% note default %}
+基础决定上层建筑。
+{% endnote %}
+
+<!-- more -->
 
 ### 欢迎
 > 首先预祝学弟学妹们新年快乐！欢迎各位准备参与web前端的学习，没错，这篇文章适合于准备学习web前端但又不知道如何下手学习哪些知识的您。

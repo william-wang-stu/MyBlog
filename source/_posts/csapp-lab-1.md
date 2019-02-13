@@ -9,6 +9,16 @@ categories:
 - Operating System
 - CSAPP
 
+photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
+---
+
+{% note default %}
+
+纸上得来终觉浅，绝知此事要躬行。
+
+{% endnote %}
+
+<!-- more -->
 ---
 
 ## CSAPP 实验记录

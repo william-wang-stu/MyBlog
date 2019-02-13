@@ -1,7 +1,7 @@
 ---
 title: Webpack打包优化指南
 date: 2018-01-27 12:50:40
-img: https://yami.io/content/images/2016/11/webpack.png
+photo: https://yami.io/content/images/2016/11/webpack.png
 tags:
 - Webpack
 -  Web 前端
@@ -9,9 +9,15 @@ categories:
 - Web 前端
 ---
 
-![](webpack-optimize/top.jpg)
 
-<blockquote class="blockquote-center">Stay hungry. Stay foolish.</blockquote>
+
+{% note default %}
+Stay hungry. Stay foolish.
+{% endnote %}
+
+<!-- more -->
+
+
 
 ### 前言
 

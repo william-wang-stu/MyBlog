@@ -1,13 +1,19 @@
 ---
 title: Docker入门思考
 date: 2018-02-15 21:39:34
-img: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
+photo: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237201cb7b9a3e06d_1511779237167_original.jpg
 tags:
 - Docker
 categories:
 - Docker
 ---
 
+
+{% note default %}
+人类善用工具，是因为懒。
+{% endnote %}
+
+<!-- more -->
 ### Docker的本地博客
 
 > 这是我用组合镜像工具搭建的一个本地博客，用到了nginx反向代理服务器，ghost博客镜像（npm包管理），还一个mysql镜像。

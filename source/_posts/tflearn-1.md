@@ -1,12 +1,17 @@
 ---
 title: Tensorflow 学习笔记
 date: 2018-12-22 18:56:12
-img: https://cdn-images-1.medium.com/max/2000/1*ngvDss8Q0iIHREPzsjcIKQ@2x.png
+photo : https://cdn-images-1.medium.com/max/2000/1*ngvDss8Q0iIHREPzsjcIKQ@2x.png
 tags:
 - Tensorflow
 - Python
 categories: Tensorflow
 ---
+{% note default %}
+智能就是有学习能力。
+{% endnote %}
+
+<!-- more -->
 
 ## 神经网络具体实现
 

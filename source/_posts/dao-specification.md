@@ -1,16 +1,20 @@
 ---
 title: DAO层设计规范
 date: 2018-03-23 12:47:11
-img: http://static.runoob.com/images/mix/life-code-typography-hd-wallpaper-1920x1080-7168.jpg
+photo: http://static.runoob.com/images/mix/life-code-typography-hd-wallpaper-1920x1080-7168.jpg
 tags:
 - Java Web
 categories:
 - Java Web
 ---
 
-![](dao-specification/top.jpg)
 
-<blockquote class="blockquote-center">人们眼中的天才之所以卓越非凡，并非天资超人一等，而是付出了持续不断的努力。1万小时的锤炼是任何人从平凡变成世界级大师的必要条件。</blockquote>
+{% note default %}
+人们眼中的天才之所以卓越非凡，并非天资超人一等，而是付出了持续不断的努力。1万小时的锤炼是任何人从平凡变成世界级大师的必要条件。
+{% endnote %}
+
+<!-- more -->
+
 
 ### DAO
 

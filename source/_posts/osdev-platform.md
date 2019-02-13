@@ -3,16 +3,19 @@ title: 操作系统开发平台
 date: 2018-12-09 20:03:25
 tags:
 - Operating System
-img: https://images.techhive.com/images/article/2014/11/docker_linux-100530817-primary.idge.jpg
+photo: https://blog.syncano.rocks/blog/content/images/2016/02/docker-1920-1080.png
 categories: Operating System
 ---
 
+{% note default %}
+
+工欲善其事，必先利其器。
+
+{% endnote %}
+<!-- more -->
 
 
-![](osdev-platform/top.jpg)
 
-
-<blockquote class="blockquote-center">万事开头难，人类善用工具。</blockquote>
 
 ### 前言
 

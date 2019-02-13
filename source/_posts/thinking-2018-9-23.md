@@ -1,11 +1,19 @@
 ---
 title: 操作系统——关于新的思考和新的目标
 date: 2018-09-23 17:38:00
-img: https://www.deepin.org/wp-content/uploads/2015/12/03.jpg
+photo: https://www.deepin.org/wp-content/uploads/2015/12/03.jpg
 tags:
 - Operating System
 categories: Operating System
 ---
+
+
+
+{% note default %}
+计算机操作系统是最复杂的软件之一。
+{% endnote %}
+
+<!-- more -->
 
 ### 2018年9月23日的思考——新的目标
 
