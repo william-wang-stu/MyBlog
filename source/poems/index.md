@@ -9,14 +9,7 @@ layout: poems
 
 # 高中集
 
-<!-- {% note primary %}
-## XX
-> 尬诗一首
 
-玉竹体修长，肌容皓凝霜。
-玫瑰丹凤藏，含羞扑鼻香。
-倾国倾城相，妲己美于商。
-{% endnote %} -->
 
 
 {% note success %}
