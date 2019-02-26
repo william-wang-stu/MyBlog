@@ -259,6 +259,37 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 
   如果我们根据 `x` 的布尔值转换为全0或全1是不是更容易解决了，即 `x==0` 时位表示是全0的， `x!=0` 时位表示是全1的。这就是1-2行代码，通过获取其布尔值0或1，然后求其补码（0的补码是本身，位表示全0；1的补码是-1，位表示全1）得到想要的结果。然后通过位运算获取最终值。
 
+#### isLessOrEqual(x,y)
+
+> 使用位级运算符实现`<=`
+
+- 代码
+
+  ```c
+  /* 
+   * isLessOrEqual - if x <= y  then return 1, else return 0 
+   *   Example: isLessOrEqual(4,5) = 1.
+   *   Legal ops: ! ~ & ^ | + << >>
+   *   Max ops: 24
+   *   Rating: 3
+   */
+  int isLessOrEqual(int x, int y) {
+    int negX=~x+1;//-x
+    int addX=negX+y;//y-x
+    int checkSign = addX>>31&1; //y-x的符号
+    int leftBit = 1<<31;//最大位为1的32位有符号数
+    int xLeft = x&leftBit;//x的符号
+    int yLeft = y&leftBit;//y的符号
+    int bitXor = xLeft ^ yLeft;//x和y符号相同标志位，相同为0不同为1
+    bitXor = (bitXor>>31)&1;//符号相同标志位格式化为0或1
+    return ((!bitXor)&(!checkSign))|(bitXor&(xLeft>>31));//返回1有两种情况：符号相同标志位为0（相同）位与 y-x 的符号为0（y-x>=0）结果为1；符号相同标志位为1（不同）位与x的符号位为1（x<0）
+  }
+  ```
+
+- 思路
+
+  通过位运算实现比较两个数的大小，无非两种情况：一是符号不同正数为大，二是符号相同看差值符号。
+
 ### 关于本次实验的思考
 
 > 题目暂未完成
