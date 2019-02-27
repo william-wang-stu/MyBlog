@@ -4,11 +4,12 @@
 
 # Site
 title: 扶桑树叶
-subtitle: "靡不有初，鲜克有终。"
-description: "扶桑树叶的博客"
+description: "扶桑树叶的小屋"
 author: 扶桑树叶
+subtitle: "靡不有初，鲜克有终。"
 language: zh-CN
 timezone:
+keywords: 计算机,博客,Web,人工智能
 
 # 查找
 search:
