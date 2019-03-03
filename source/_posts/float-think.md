@@ -9,7 +9,7 @@ tags:
 - CSAPP
 categories:
 - Computer Science
-photo: /2019/03/03/float-think/float.png
+photo: http://d.5857.com/gqfjbz.120911/016.jpg
 ---
 
 {% note warning %}
@@ -90,7 +90,7 @@ int是4字节类型，也就是32位。int的存储格式就是32位补码。这
 
 ## float的存储格式
 
-float的存储格式正如文章的标题图片，在这里我们只考虑简单的单精度浮点数和双精度浮点数：
+float的存储格式正如下图，在这里我们只考虑简单的单精度浮点数和双精度浮点数：
 
 ![](float-think/float.png)
 
