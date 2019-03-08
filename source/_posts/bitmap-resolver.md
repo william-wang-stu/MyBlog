@@ -1,5 +1,5 @@
 ---
-title: BMP的文件处理（C语言实现）
+title: BMP文件处理（C语言实现）
 mathjax: true
 copyright: true
 comment: true
@@ -24,6 +24,7 @@ photo: http://s1.1zoom.me/b4650/589/Texture_Geometry_529246_1920x1080.jpg
 ## 前言
 
 本系列文章（DIP，Digital Image Processing），用于记录总结数字图像处理课程的实验内容。目录请参考[DIP系列文章](/tags/DIP/)
+
 
 ## 题目要求
 
@@ -186,6 +187,20 @@ for (size_t i = 0; i < itemCounts; i++)
 ![](bitmap-resolver/degrey.png)
 
 ## 代码
+
+{% note warning %}
+
+### 纠正
+
+本程序是不完全版本，或者说是错误版本。有以下两点不足：
+
+- 未对图像宽度非4倍数进行特殊处理。
+- 本文只对灰度图只做了24位模拟，没有转化为8位灰度图。
+- 文件头的字节对齐问题，相关文章[计算机的字节对齐](/2019/03/08/byte-alignment/)
+
+修正版本请查看[BMP文件的特殊宽度处理及字节对齐问题](/2019/03/08/bitmap-resolver-rectify/)
+
+{% endnote %}
 
 所有代码如下：
 
