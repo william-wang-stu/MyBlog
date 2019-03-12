@@ -11,6 +11,7 @@
     "hexo-asset-image": "^0.0.3",
     "hexo-baidu-url-submit": "^0.0.5",
     "hexo-deployer-git": "^0.3.1",
+    "hexo-filter-github-emojis": "^2.0.0",
     "hexo-filter-sequence": "^1.0.3",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "^0.1.5",
