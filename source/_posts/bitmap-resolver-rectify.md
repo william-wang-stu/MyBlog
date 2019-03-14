@@ -162,7 +162,7 @@ for (size_t i = 0; i < info.height; i++)
 
 那么将24位真彩色（RGB）位图转换为8位灰度图需要修改那些属性呢？
 
-
+### 方法
 
 1. 图像数据$RGB24位真彩色\to8位灰度$
 2. 调色板数据添加，每个单位1个字节
@@ -170,16 +170,74 @@ for (size_t i = 0; i < info.height; i++)
    1. 文件大小
    2. 偏移量
 4. 信息头
-   1. 图像宽度
    2. 颜色位数
    3. 图像实际所用字节数
 
 
-> 代码暂未实现，待续……
+### 实现
+
+
+
+```c
+void BMP24To8Gray(const char * from, const char * to) {
+	BMFILEHEADER fromHeader;
+	INFOHEADER fromInfo;
+
+
+	RGBITEM ** fromData = malloc(sizeof(RGBITEM*));
+	RGBQUAD ** fromPalette = malloc(sizeof(RGBQUAD*));
+
+	int fromPixelNumber = BMPReader(from, &fromHeader, &fromInfo, fromPalette, fromData);
+
+
+	BMFILEHEADER toHeader = fromHeader;
+	INFOHEADER toInfo = fromInfo;
+	// set info
+	toInfo.colorCount = 8;
+	toInfo.infoHeaderSize = 40;
+	toInfo.planes = 1;
+	toInfo.sizeImage = (toInfo.width+3)/4*4*toInfo.height;
+	toInfo.colorUsed = 256;
+
+
+	RGBQUAD ** toPalette = malloc(sizeof(RGBQUAD*));
+	*toPalette = malloc(256 * sizeof(RGBQUAD));
+	for (size_t i = 0; i < 256; i++)
+	{
+		((*toPalette) + i)->r = ((*toPalette) + i)->b = ((*toPalette) + i)->g = i;
+	}
+
+	unsigned char **toData = malloc(sizeof(unsigned char *));
+	*toData = malloc(fromPixelNumber);
+
+	for (size_t i = 0; i < fromPixelNumber; i++)
+	{
+		*(*toData+i)= ((*fromData + i)->r * 299 + (*fromData + i)->g * 587 + (*fromData + i)->b * 114 + 500) / 1000;
+	}
+
+	*(unsigned *)toHeader.offset = sizeof(toHeader) + sizeof(toInfo) + 256 * sizeof(RGBQUAD);
+	*(unsigned *)toHeader.size = toHeader.offset + toInfo.sizeImage;
+
+	BMPWriter8(to, &toHeader, &toInfo, toPalette, toData);
+
+}
+```
 
 
 
 ## 代码
+
+
+
+
+
+{% note primary%}
+
+**全部代码请查看[GitHub](https://github.com/ScarboroughCoral/DIPModule**
+
+{% endnote %}
+
+
 
 ```c
 #include "BMP.h"

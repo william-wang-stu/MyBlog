@@ -188,6 +188,16 @@ for (size_t i = 0; i < itemCounts; i++)
 
 ## 代码
 
+
+
+{% note primary%}
+
+**全部代码请查看[GitHub](https://github.com/ScarboroughCoral/DIPModule**
+
+{% endnote %}
+
+
+
 {% note warning %}
 
 ### 纠正
