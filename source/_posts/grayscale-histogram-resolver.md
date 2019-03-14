@@ -9,7 +9,7 @@ tags:
 - Computer Graphics
 - DIP
 categories: Computer Graphics
-photo: http://www.whitewizardgames.com/wp-content/uploads/2017/12/wallpaper-star-realms-fleet_1920-x-1080.jpg
+photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552540121111&di=12ac9abf96c0875a514b00c25a757c0c&imgtype=jpg&src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D1551036658%2C3122506625%26fm%3D214%26gp%3D0.jpg
 ---
 
 {% note default %}
@@ -23,7 +23,9 @@ photo: http://www.whitewizardgames.com/wp-content/uploads/2017/12/wallpaper-star
 ---
 
 
+## 前言
 
+了解了BMP文件的格式，下面就开始真正的进行图像处理了，首先是图像增强，本文主要写灰度直方图和根据灰度直方图均衡化8位灰度图
 
 
 ## 直方图统计
@@ -104,23 +106,23 @@ photo: http://www.whitewizardgames.com/wp-content/uploads/2017/12/wallpaper-star
 
 ### 24位真彩色（原图）
 
-![](grayscale-histogram-resolver/1.bmp)
+![](grayscale-histogram-resolver/1.png)
 
 ### 8位灰度图（转化后的8位灰度图）
 
-![](grayscale-histogram-resolver/2.bmp)
+![](grayscale-histogram-resolver/2.png)
 
 ### 均衡化8位灰度图（根据8位灰度图均衡化后的灰度图）
 
-![](grayscale-histogram-resolver/3.bmp)
+![](grayscale-histogram-resolver/3.png)
 
 ### 未均衡化8位灰度图的统计直方图
 
-![](grayscale-histogram-resolver/4.bmp)
+![](grayscale-histogram-resolver/4.png)
 
 ### 均衡化8位灰度图的统计直方图
 
-![](grayscale-histogram-resolver/5.bmp)
+![](grayscale-histogram-resolver/5.png)
 
 
 
