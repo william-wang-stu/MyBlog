@@ -27,10 +27,10 @@ permalink_pinyin:
 feed:
   type: atom
   path: atom.xml
-  limit: 20
+  limit: 0
   hub:
-  content:
-  content_limit: 140
+  content: true
+  content_limit: 0
   content_limit_delim: ' '
   order_by: -date
 

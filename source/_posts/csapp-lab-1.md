@@ -24,10 +24,8 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 ## CSAPP 实验记录
 
 {% note info %}
-### 系列内容
 
-本系列文章主要记录 CSAPP 3.0 的实验过程
-
+**本系列文章主要记录 CSAPP 3.0 的实验过程**
 {% endnote %}
 
 
