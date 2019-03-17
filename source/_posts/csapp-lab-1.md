@@ -4,11 +4,12 @@ date: 2019-02-12 17:24:27
 tags:
 - Operating System
 - CSAPP
+- CSAPP Lab
 mathjax: true
 categories:
 - Operating System
-- CSAPP
-
+- Computer Science
+no-emoji: false
 photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 ---
 
@@ -25,7 +26,7 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 
 {% note info %}
 
-**本系列文章主要记录 CSAPP 3.0 的实验过程**
+**[本系列文章](/tags/CSAPP-Lab/)主要记录 CSAPP 3.0 的实验过程，所有实验记录文章请查看[这儿](/tags/CSAPP-Lab/)**
 {% endnote %}
 
 
@@ -39,6 +40,7 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 - 实验题目题解
   - 题解代码
   - 题目思考
+- 结果
 - 关于本次实验的思考
 
 
@@ -127,7 +129,7 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 
 #### isTmax(x)
 
-> 通过位运算计算是否是补码最大值。这个题想了好久，最终参考了别人的代码。
+> 通过位运算计算是否是补码最大值。
 
 - 代码
 
@@ -286,8 +288,228 @@ photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 
 - 思路
 
-  通过位运算实现比较两个数的大小，无非两种情况：一是符号不同正数为大，二是符号相同看差值符号。
+通过位运算实现比较两个数的大小，无非两种情况：一是符号不同正数为大，二是符号相同看差值符号。
 
-### 关于本次实验的思考
+#### logicalNeg(x)
 
-> 题目暂未完成
+> 使用位级运算求逻辑非 **`!`**
+
+- 代码
+
+```c
+/* 
+ * logicalNeg - implement the ! operator, using all of 
+ *              the legal operators except !
+ *   Examples: logicalNeg(3) = 0, logicalNeg(0) = 1
+ *   Legal ops: ~ & ^ | + << >>
+ *   Max ops: 12
+ *   Rating: 4 
+ */
+
+int logicalNeg(int x) {
+  
+  return ((x|(~x+1))>>31)+1;
+}
+
+```
+- 思路
+
+逻辑非就是非0为1，非非0为0。利用其补码（取反加一）的性质，除了0和最小数（符号位为1，其余为0），外其他数都是互为相反数关系（符号位取位或为1）。0和最小数的补码是本身，不过0的符号位与其补码符号位位或为0，最小数的为1。利用这一点得到解决方法。
+
+#### howManyBits(x)
+
+> 求值：“一个数用补码表示最少需要几位？”
+
+- 代码
+
+```c
+/* howManyBits - return the minimum number of bits required to represent x in
+ *             two's complement
+ *  Examples: howManyBits(12) = 5
+ *            howManyBits(298) = 10
+ *            howManyBits(-5) = 4
+ *            howManyBits(0)  = 1
+ *            howManyBits(-1) = 1
+ *            howManyBits(0x80000000) = 32
+ *  Legal ops: ! ~ & ^ | + << >>
+ *  Max ops: 90
+ *  Rating: 4
+ */
+int howManyBits(int x) {
+  int b16,b8,b4,b2,b1,b0;
+  int sign=x>>31;
+  x = (sign&~x)|(~sign&x);//如果x为正则不变，否则按位取反（这样好找最高位为1的，原来是最高位为0的，这样也将符号位去掉了）
+
+
+// 不断缩小范围
+  b16 = !!(x>>16)<<4;//高十六位是否有1
+  x = x>>b16;//如果有（至少需要16位），则将原数右移16位
+  b8 = !!(x>>8)<<3;//剩余位高8位是否有1
+  x = x>>b8;//如果有（至少需要16+8=24位），则右移8位
+  b4 = !!(x>>4)<<2;//同理
+  x = x>>b4;
+  b2 = !!(x>>2)<<1;
+  x = x>>b2;
+  b1 = !!(x>>1);
+  x = x>>b1;
+  b0 = x;
+  return b16+b8+b4+b2+b1+b0+1;//+1表示加上符号位
+}
+
+```
+
+- 思路
+
+如果是一个正数，则需要找到它最高的一位（假设是n）是1的，再加上符号位，结果为n+1；如果是一个负数，则需要知道其最高的一位是0的（例如4位的1101和三位的101补码表示的是一个值：-3，最少需要3位来表示）。
+
+
+#### floatScale2(f)
+
+> 求2乘一个浮点数
+
+- 代码
+
+```c
+/* 
+ * floatScale2 - Return bit-level equivalent of expression 2*f for
+ *   floating point argument f.
+ *   Both the argument and result are passed as unsigned int's, but
+ *   they are to be interpreted as the bit-level representation of
+ *   single-precision floating point values.
+ *   When argument is NaN, return argument
+ *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
+ *   Max ops: 30
+ *   Rating: 4
+ */
+unsigned floatScale2(unsigned uf) {
+  int exp = (uf&0x7f800000)>>23;
+  int sign = uf&(1<<31);
+  if(exp==0) return uf<<1|sign;
+  if(exp==255) return uf;
+  exp++;
+  if(exp==255) return 0x7f800000|sign;
+  return (exp<<23)|(uf&0x807fffff);
+}
+
+
+```
+
+- 思路
+
+首先排除无穷小、0、无穷大和非数值NaN，此时浮点数指数部分（`真正指数+bias`）分别存储的的为0，0，,255，255。这些情况，无穷大和NaN都只需要返回参数（$2\times\infty=\infty,2\times NaN=NaN$），无穷小和0只需要将原数乘二再加上符号位就行了（并不会越界）。剩下的情况，如果指数+1之后为指数为255则返回原符号无穷大，否则返回指数+1之后的原符号数。
+
+#### floatFloat2Int(f)
+
+> 将浮点数转换为整数
+
+- 代码
+
+```c
+/* 
+ * floatFloat2Int - Return bit-level equivalent of expression (int) f
+ *   for floating point argument f.
+ *   Argument is passed as unsigned int, but
+ *   it is to be interpreted as the bit-level representation of a
+ *   single-precision floating point value.
+ *   Anything out of range (including NaN and infinity) should return
+ *   0x80000000u.
+ *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
+ *   Max ops: 30
+ *   Rating: 4
+ */
+int floatFloat2Int(unsigned uf) {
+  int s_    = uf>>31;
+  int exp_  = ((uf&0x7f800000)>>23)-127;
+  int frac_ = (uf&0x007fffff)|0x00800000;
+  if(!(uf&0x7fffffff)) return 0;
+
+  if(exp_ > 31) return 0x80000000;
+  if(exp_ < 0) return 0;
+
+  if(exp_ > 23) frac_ <<= (exp_-23);
+  else frac_ >>= (23-exp_);
+
+  if(!((frac_>>31)^s_)) return frac_;
+  else if(frac_>>31) return 0x80000000;
+  else return ~frac_+1;
+}
+
+```
+
+- 思路
+
+首先考虑特殊情况：如果原浮点值为0则返回0；如果真实指数大于31（frac部分是大于等于1的，1<<31位会覆盖符号位），返回规定的溢出值**0x80000000u**；如果$exp<0$（1右移x位,x>0，结果为0）则返回0。剩下的情况：首先把小数部分（23位）转化为整数（和23比较），然后判断是否溢出：如果和原符号相同则直接返回，否则如果结果为负（原来为正）则溢出返回越界指定值**0x80000000u**，否则原来为负，结果为正，则需要返回其补码（相反数）。
+
+
+{% note info %}
+
+**C语言的浮点数强转为整数怎么转的？**
+
+利用位级表示进行强转！
+
+{% endnote %}
+
+#### floatPower2(x)
+
+> 求$2.0^x$
+
+- 代码
+
+```c
+/* 
+ * floatPower2 - Return bit-level equivalent of the expression 2.0^x
+ *   (2.0 raised to the power x) for any 32-bit integer x.
+ *
+ *   The unsigned value that is returned should have the identical bit
+ *   representation as the single-precision floating-point number 2.0^x.
+ *   If the result is too small to be represented as a denorm, return
+ *   0. If too large, return +INF.
+ * 
+ *   Legal ops: Any integer/unsigned operations incl. ||, &&. Also if, while 
+ *   Max ops: 31 
+ *   Rating: 4
+ */
+unsigned floatPower2(int x) {
+
+  int INF = 0xff<<23;
+  int exp = x + 127;
+  if(exp <= 0) return 0;
+  if(exp >= 255) return INF;
+  return exp << 23;
+}
+
+```
+
+- 思路
+
+2.0的位级表示（$1.0\times2^1$）：符号位：0，指数：1+127=128，frac=1.0-1=0。$2.0^x=(1.0\times2^1)^x=1.0\times2^x$，所以x就当做真正的指数的。
+
+这个比较简单，首先得到偏移之后的指数值e，如果e小于等于0（为0时，结果为0，因为2.0的浮点表示frac部分为0），对应的如果e大于等于255则为无穷大或越界了。否则返回正常浮点值，frac为0，直接对应指数即可。
+
+
+## 结果
+
+> 很遗憾，最终的一个题目`floatPower2`始终无法通过，不过不是逻辑上的错误，在VS2017上完全可以运行，没有进入死循环。（个人感觉可能是官方的评测出了问题:-(，:cry: ）
+
+![](csapp-lab-1/result.png)
+
+
+
+## 关于本次实验的思考
+
+### 所感
+
+这是CSAPP实验的第一次实验，接下来还有10个Lab等着我，希望我能够坚持下来吧。做本次实验的有以下几点感受：
+- 大多题目都没有思路，或者是自己懒得想，有一些题目是照搬别人的代码
+- 效率太低，这个实验在2019寒假前就开始做了，直到2019三月中旬才完成，有的题目甚至需要思考1个小时甚至更多。
+- 自己变笨了，想到奶奶小时候一直说的话：*拳不离手，曲不离口，三天不动手生，三天不念口生，脑越用越灵，手越用越巧，脑子不学要生锈，人不学习要落后*，果然如此，大学后长期懒散（slack）惯了。
+
+### 所得
+
+虽然实验过程很坎坷，但是所有代码都搞懂了，以后有机会再二刷吧。本次实验的基础收获当然是关于信息的位级表示相关的内容了，对一些位级运算符更加熟悉了一些。不过更大的收获是实验所感给我敲响的警钟，如下：
+
+1. 实验必须自己做，不会首先参考知识点的搜索，其次在找方法源码
+2. 实验必须要总结，总结自己实验的思路
+3. 总结实验的学习方法和如何提高效率问题
+
+
