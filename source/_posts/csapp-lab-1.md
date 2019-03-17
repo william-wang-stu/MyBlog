@@ -9,7 +9,7 @@ mathjax: true
 categories:
 - Operating System
 - Computer Science
-no-emoji: false
+no-emoji: true
 photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 ---
 
@@ -489,7 +489,7 @@ unsigned floatPower2(int x) {
 
 ## 结果
 
-> 很遗憾，最终的一个题目`floatPower2`始终无法通过，不过不是逻辑上的错误，在VS2017上完全可以运行，没有进入死循环。（个人感觉可能是官方的评测出了问题:-(，:cry: ）
+> 很遗憾，最终的一个题目`floatPower2`始终无法通过，不过不是逻辑上的错误，在VS2017上完全可以运行，没有进入死循环。（个人感觉可能是官方的评测出了问题:-(，{% github_emoji cry %} ）
 
 ![](csapp-lab-1/result.png)
 
