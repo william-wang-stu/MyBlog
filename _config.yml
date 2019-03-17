@@ -18,6 +18,15 @@ search:
   format: html
   limit: 10000
 
+
+# github emoji
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
 # 中文连接
 permalink_pinyin:
   enable: true
