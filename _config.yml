@@ -20,12 +20,18 @@ search:
 
 
 # github emoji
+# githubEmojis:
+#   enable: true
+#   className: github-emoji
+#   inject: true
+#   styles:
+#   customEmojis:
 githubEmojis:
   enable: true
   className: github-emoji
-  inject: true
+  unicode: false
   styles:
-  customEmojis:
+  localEmojis:
 
 # 中文连接
 permalink_pinyin:
