@@ -71,6 +71,8 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15530
 {% endnote %}
 
 #### 多处理器
+> 多处理器包含***多核处理器***和***超线程处理器***。
+
 {% note info  %}
 
 随着多核处理器和超线程的出现，使得多处理器变得常见。
@@ -84,6 +86,8 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15530
 {% note info no-icon %}
 
 多核处理器是将多个CPU（称为“核”）集成到一个集成电路芯片上。
+
+> 以下是一个典型的多核处理器
 
 - 每一个CPU（即“核”）可以执行一个线程
 - 每个核都有自己的L1和L2级Cache
