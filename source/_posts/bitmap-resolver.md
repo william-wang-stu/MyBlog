@@ -7,7 +7,9 @@ date: 2019-03-06 18:19:56
 tags:
 - Computer Graphics
 - DIP
-categories: Computer Graphics
+categories: 
+- Computer Science
+- Computer Graphics
 photo: http://s1.1zoom.me/b4650/589/Texture_Geometry_529246_1920x1080.jpg
 ---
 

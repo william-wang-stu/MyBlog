@@ -4,7 +4,9 @@ date: 2018-09-23 17:38:00
 photo: https://www.deepin.org/wp-content/uploads/2015/12/03.jpg
 tags:
 - Operating System
-categories: Operating System
+categories: 
+- Computer Science
+- Operating System
 ---
 
 

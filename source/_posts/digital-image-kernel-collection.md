@@ -8,7 +8,9 @@ date: 2019-03-14 19:01:20
 tags:
 - Computer Graphics
 - DIP
-categories: Computer Graphics
+categories: 
+- Computer Science
+- Computer Graphics
 photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552632955568&di=95596c734f92216417197cc0f4616e69&imgtype=0&src=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F4%2F8%2Fd%2F371056.jpg
 ---
 

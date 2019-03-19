@@ -7,7 +7,9 @@ date: 2019-03-08 08:10:54
 tags:
 - Computer Graphics
 - DIP
-categories: Computer Graphics
+categories: 
+- Computer Science
+- Computer Graphics
 photo: http://www.33lc.com/article/UploadPic/2012-10/2012101811361423324.jpg
 ---
 

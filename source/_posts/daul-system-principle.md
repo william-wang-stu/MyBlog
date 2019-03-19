@@ -4,7 +4,9 @@ date: 2018-03-23 15:01:57
 tags:
 - Operating System
 photo: https://pic.taifua.com/Picture/website/ubuntu/qq.png
-categories: Operating System
+categories: 
+- Computer Science
+- Operating System
 ---
 
 

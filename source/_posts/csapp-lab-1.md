@@ -7,8 +7,8 @@ tags:
 - CSAPP Lab
 mathjax: true
 categories:
-- Operating System
 - Computer Science
+- Operating System
 no-emoji: false
 photo: http://www.woyoupu.com/uploads/allimg/120310/1-120310160317.jpg
 ---

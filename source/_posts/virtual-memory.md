@@ -4,7 +4,9 @@ date: 2018-12-09 12:51:13
 top: true
 tags:
 - Operating System
-categories: Operating System
+categories: 
+- Computer Science
+- Operating System
 photo: https://www.desktop-background.com/download/o/2014/04/25/752494_apple-logo-christmas-windows-10-wallpapers_1920x1080_h.jpg
 ---
 
