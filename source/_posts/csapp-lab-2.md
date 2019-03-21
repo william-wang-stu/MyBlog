@@ -153,10 +153,30 @@ cgdb bomb
 
 ![](csapp-lab-2/phrase2-readnum.png)
 ### #Phrase 3
+
+![](csapp-lab-2/phrase3.png)
+
+![](csapp-lab-2/phrase3-format.png)
+
+![](csapp-lab-2/phrase3-think.png)
+
+![](csapp-lab-2/phrase3-result.png)
+
 ### #Phrase 4
+
+![](csapp-lab-2/phrase4.png)
+
+![](csapp-lab-2/phrase4-func.png)
+
+
+
+
 ### #Phrase 5
+
+
+![](csapp-lab-2/phrase5.png)
+
 ### #Phrase 6
-### #Phrase 7
 
 
 
