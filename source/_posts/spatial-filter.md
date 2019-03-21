@@ -60,7 +60,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15531
 
 ## 任务Start
 
-首先展示一下原图（因为需要找噪声比较明显的图像，所以没找到像素比较大的和attractive的:cry:）：
+首先展示一下原图（因为需要找噪声比较明显的图像，所以没找到像素比较大的和attractive的 :cry:）：
 
 ![](spatial-filter/gray1.png)
 
