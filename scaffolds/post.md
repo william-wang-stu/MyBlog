@@ -6,7 +6,6 @@ categories:
 mathjax: true
 copyright: true
 comment: true
-no-emoji: false
 photo: 
 ---
 

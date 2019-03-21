@@ -4,7 +4,6 @@ mathjax: false
 copyright: true
 comment: true
 date: 2019-03-12 08:12:08
-no-emoji: false
 tags:
 - Technology
 - 5G

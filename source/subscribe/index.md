@@ -1,7 +1,6 @@
 ---
 title: 关于订阅
 date: 2019-03-15 11:40:06
-no-emoji: false
 ---
 
 
@@ -22,10 +21,9 @@ no-emoji: false
 
 
 
-
-- [邮件订阅（推荐） :laughing: ](https://feedburner.google.com/fb/a/mailverify?uri=scarboroughcoral/FmyG&amp;loc=zh_CN/)
-- http://blog.scarboroughcoral.top/atom.xml *（可用 :smile:）*
+- [邮件订阅（推荐） 🤣 ](https://feedburner.google.com/fb/a/mailverify?uri=scarboroughcoral/FmyG&amp;loc=zh_CN/)
+- http://blog.scarboroughcoral.top/atom.xml *（可用 🙂）*
   
-- http://feeds.feedburner.com/scarboroughcoral/FmyG *（需翻墙 :flushed:）*
+- http://feeds.feedburner.com/scarboroughcoral/FmyG *（需翻墙 😳）*
   
 

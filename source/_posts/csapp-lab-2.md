@@ -3,7 +3,6 @@ title: CSAPP 之 Bomb Lab
 mathjax: false
 copyright: true
 comment: true
-no-emoji: false
 date: 2019-03-18 16:31:05
 tags:
 - Operating System

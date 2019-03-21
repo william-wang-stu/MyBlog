@@ -3,7 +3,6 @@ title: DIP中常见的核
 mathjax: true
 copyright: true
 comment: true
-no-emoji: false
 date: 2019-03-14 19:01:20
 tags:
 - Computer Graphics

@@ -3,7 +3,6 @@ title: 并发和并行的概念与应用
 mathjax: false
 copyright: true
 comment: true
-no-emoji: false
 date: 2019-03-18 22:10:55
 tags:
 - Operating System
