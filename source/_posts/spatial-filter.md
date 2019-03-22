@@ -245,6 +245,10 @@ void MedianFiltering(const char * src, const char * output)
 
 ![](spatial-filter/gray3-3.png)
 
+### 两者对比
+
+很明显，中值滤波处理方法更优。平均处理方法在模糊噪声的同时也一定程度的模糊的关键像素，会产生新的灰度值；而中值滤波只会选取已有的灰度值进行取值。
+
 
 ## 总结
 {% note primary%}
