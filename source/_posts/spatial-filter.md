@@ -124,12 +124,12 @@ void AverageProcessing(const char * src, const char * output)
 			int newGray = *(*data + (i - 1) * info.width + (j - 1)) +
 				*(*data + (i)* info.width + (j - 1)) +
 				*(*data + (i + 1)* info.width + (j - 1)) +
-				+*(*data + (i - 1)* info.width + (j)) +
-				+*(*data + (i)* info.width + (j)) +
-				+*(*data + (i + 1)* info.width + (j)) +
-				+*(*data + (i - 1)* info.width + (j + 1)) +
-				+*(*data + (i)* info.width + (j + 1)) +
-				+*(*data + (i + 1)* info.width + (j + 1));
+				*(*data + (i - 1)* info.width + (j)) +
+				*(*data + (i)* info.width + (j)) +
+				*(*data + (i + 1)* info.width + (j)) +
+				*(*data + (i - 1)* info.width + (j + 1)) +
+				*(*data + (i)* info.width + (j + 1)) +
+				*(*data + (i + 1)* info.width + (j + 1));
 			newGray /= 9;
 			*(*outData + i * info.width+j) = newGray;
 		}
@@ -187,12 +187,12 @@ void MedianFiltering(const char * src, const char * output)
 			int newGrays[] = { *(*data + (i - 1) * info.width + (j - 1)) ,
 				*(*data + (i)* info.width + (j - 1)) ,
 				*(*data + (i + 1)* info.width + (j - 1)) ,
-				+*(*data + (i - 1)* info.width + (j)) ,
-				+*(*data + (i)* info.width + (j)) ,
-				+*(*data + (i + 1)* info.width + (j)) ,
-				+*(*data + (i - 1)* info.width + (j + 1)) ,
-				+*(*data + (i)* info.width + (j + 1)) ,
-				+*(*data + (i + 1)* info.width + (j + 1)) };
+				*(*data + (i - 1)* info.width + (j)) ,
+				*(*data + (i)* info.width + (j)) ,
+				*(*data + (i + 1)* info.width + (j)) ,
+				*(*data + (i - 1)* info.width + (j + 1)) ,
+				*(*data + (i)* info.width + (j + 1)) ,
+				*(*data + (i + 1)* info.width + (j + 1)) };
 			quicksort(newGrays, 0, 8);
 			int newGray = newGrays[4];
 			*(*outData + i * info.width + j) = newGray;
