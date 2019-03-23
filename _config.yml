@@ -12,6 +12,14 @@ timezone:
 keywords: 计算机,博客,Web,人工智能
 
 
+# emoji
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: false
+  styles:
+  localEmojis:
+
 # 查找
 search:
   path: search.xml
