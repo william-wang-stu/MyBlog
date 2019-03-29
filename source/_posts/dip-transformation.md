@@ -3,7 +3,6 @@ title: 图像基本变换
 mathjax: true
 copyright: true
 comment: true
-type: picture
 date: 2019-03-29 09:21:04
 tags:
 - Computer Graphics
