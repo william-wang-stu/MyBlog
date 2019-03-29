@@ -14,8 +14,8 @@ categories:
 photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554210715&di=987a9d5d8f77c1e2436cfe3f6b1aa00f&imgtype=jpg&er=1&src=http%3A%2F%2Fdownza.img.zz314.com%2Fdnb%2Fcltf-1161%2F2017-09-22%2F10cc91bf071e2287cf41092d81e71413.jpg
 ---
 
-{% note danger %}
-以子之矛，攻子之盾。
+{% note primary %}
+《深入理解计算机系统》之Attack Lab。
 {% endnote %}
 
 <!-- more -->
@@ -120,13 +120,21 @@ Attack分为两个部分，代码注入攻击和ROP（Return-Oriented Program）
 
 #### # Phase3
 
-![](csapp-lab-3/phrase3-rsp-old.png)
-![](csapp-lab-3/phrase3-rsp-new.png)
-![](csapp-lab-3/phrase3-success.png)
-
 {% note primary %}
 **目标：注入固定字符串ASCII码序列并传首地址作为参数然后调用touch3函数。**
 {% endnote %}
+
+第三个和第二个差不多，只不过多了一点坑，同样是传递参数，只不过需要传一个字符串，而字符串需要自己保存，而且还有可能函数调用的过程中被其他数据覆盖。
+
+
+
+![](csapp-lab-3/phrase3-rsp-old.png)
+
+
+
+![](csapp-lab-3/phrase3-rsp-new.png)
+![](csapp-lab-3/phrase3-success.png)
+
 
 
 ### Rtarget
