@@ -7,10 +7,6 @@ Allow: /games/
 Allow: /poems/ 
 Allow: /about/ 
 Disallow: /vendors/
-Disallow: /js/
-Disallow: /fonts/
-Disallow: /vendors/
-Disallow: /fancybox/
 
 Sitemap: http://blog.scarboroughcoral.top/sitemap.xml
 Sitemap: http://blog.scarboroughcoral.top/baidusitemap.xml
