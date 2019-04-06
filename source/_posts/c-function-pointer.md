@@ -1,5 +1,5 @@
 ---
-title: About function point in C
+title: About function pointer in C
 mathjax: false
 copyright: true
 comment: true
@@ -13,7 +13,7 @@ photo: http://nie.res.netease.com/r/pic/20180310/8affc49c-b252-445e-8715-eb922ca
 ---
 
 {% note primary %}
-"About C function point in C" expressed in English.
+"About C function pointer in C" expressed in English.
 {% endnote %}
 
 <!-- more -->
