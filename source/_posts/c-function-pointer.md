@@ -8,8 +8,9 @@ tags:
 - C
 - Functional Programming
 - Express in English
-categories: C
-photo: http://b-ssl.duitang.com/uploads/blog/201403/17/20140317171259_KCBfP.jpeg
+categories: 
+- C
+photo: /2019/04/06/c-function-pointer/20140317171259_KCBfP.jpeg
 ---
 
 {% note primary %}
@@ -29,7 +30,7 @@ I have coded by using the functional programming in JavaScript and Java.I also h
 
 > ***Not dyed*** by **He Tu**
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=533181327&auto=1&height=66"></iframe>
+<iframe frameborder="no" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=533181327&auto=1&height=66"></iframe>
 
 ## Body
 
@@ -50,7 +51,12 @@ In this way,we can declare a function pointer which points to a  class of functi
 
 While in JavaScript,We need not be careful about it.
 
-<!-- In the underlying architecture,the reason why a function pointer can only point to a class functions which have the same parameters and return-value is that  -->
+In the underlying architecture,the reasons why a function pointer can only point to a class functions which have the same parameters and return-value are as the following:
+
+- the compiler need to ensure the number and type of parameters to allocate the memory space for it,and to perform the correct operation.
+- the compiler need to know the return-value type of the function.
+
+Thus,the function pointer must be designated the return-value type and the parameter type.It's the same as the data pointer which has definite specification.
 
 ### An example
 
