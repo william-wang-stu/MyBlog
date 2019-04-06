@@ -9,7 +9,7 @@ tags:
 - Functional Programming
 - Express in English
 categories: C
-photo: http://nie.res.netease.com/r/pic/20180310/8affc49c-b252-445e-8715-eb922cae6fb1.jpg
+photo: http://b-ssl.duitang.com/uploads/blog/201403/17/20140317171259_KCBfP.jpeg
 ---
 
 {% note primary %}
