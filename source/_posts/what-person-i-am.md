@@ -64,7 +64,7 @@ I am a boy of vanity.I am a tsundere boy.I don't want to be a boy that couldn't 
 - Listen to music
 > atique music
 - Play games
-> Large-scale single-player games.I have played ***Rise of the Tomb Raider***,***Tomb Raider*** which both are the one of the trilogy,and a game named **Fallout 4** on the **steam platform**.
+> Large-scale single-player games.I have played ***Rise of the Tomb Raider***,***Tomb Raider*** which both are the one of the trilogy,and a game named ***Fallout 4*** on the **steam platform**.
 - Exercise
 > Exercise with my partners.
 - Reading Books
