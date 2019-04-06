@@ -36,7 +36,7 @@ I have coded by using the functional programming in JavaScript and Java.I also h
 
 There are two main themes in the part:
 
-- C functional Pointer
+- C function pointer
 - *left-value* & *right-value*
 
 ### How to use C function pointer
