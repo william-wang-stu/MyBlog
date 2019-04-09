@@ -35,7 +35,7 @@ The reason why I write this blog article is just to understand the reference and
 
 {% note primary %}
 
-Reference is the same as pointer in essence.Both are the address,and the difference between both is that reference accesses the attribute by the symbol "." while pointer by the symbol "->".
+Reference is the same as pointer in essence.Both are the address,and the differences between both are the using rules.
 
 {% endnote %}
 
