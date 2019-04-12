@@ -20,6 +20,11 @@ githubEmojis:
   styles:
   customEmojis:
 
+# 图片懒加载
+lazyload:
+  enable: true 
+  onlypost: false
+  loadingImg: # eg /images/loading.gif 
 # 查找
 search:
   path: search.xml
@@ -85,9 +90,9 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 prism_plugin:
