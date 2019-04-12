@@ -23,8 +23,9 @@ githubEmojis:
 # 图片懒加载
 lazyload:
   enable: true 
-  onlypost: false
+  onlypost: true
   loadingImg: # eg /images/loading.gif 
+
 # 查找
 search:
   path: search.xml
