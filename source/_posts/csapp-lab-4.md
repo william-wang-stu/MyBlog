@@ -915,6 +915,8 @@ bool W_bubble = 0;
 
 然后修改ncopy.ys文件
 
+#### Version 1.0
+
 ```x86asm 文件名：archlab/archlab-handout/sim/pipe/ncopy.ys
 #/* $begin ncopy-ys */
 ##################################################################
@@ -968,6 +970,101 @@ End:
 主要考虑还是要减少bubble，还有程序优化问题。
 
 看完第五章再来二刷吧。
+
+#### Version 2.0
+
+结果：
+![](csapp-lab-4/result2.png)
+
+
+所作修改：
+
+- 4x4循环展开，因为C=4，L=1
+- 消除了一些load/use指令组合
+
+```x86asm 文件名：archlab/archlab-handout/sim/pipe/ncopy.ys
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len words to dst.
+# Return the number of positive words (>0) contained in src.
+#
+# Include your name and ID here.
+#
+# Describe how and why you modified the baseline code.
+#
+##################################################################
+# Do not modify this portion
+# Function prologue.
+# %rdi = src, %rsi = dst, %rdx = len
+ncopy:
+
+##################################################################
+# You can modify this portion
+	# Loop header
+	xorq %rax,%rax		# count = 0;
+	andq %rdx,%rdx		# len <= 0?
+	jle Done		# if so, goto Done:
+
+testType:
+	irmovq $3,%r8
+	andq %rdx, %r8
+	je Loop
+	rrmovq %r8,%r11
+	irmovq $1, %rcx
+originLoop:
+	mrmovq (%rdi), %r10
+	iaddq $8, %rdi		# src++
+	andq %r10, %r10
+	rmmovq %r10, (%rsi)
+	jle neg
+	iaddq $1, %rax
+neg:
+	iaddq $8, %rsi		# dst++
+	subq %rcx, %r8
+	jg originLoop
+	subq %r11,%rdx		# len > 0?
+	jle Done
+Loop:	
+	mrmovq (%rdi), %r10	# read val from src...
+	mrmovq 8(%rdi), %r11
+	mrmovq 16(%rdi), %r8
+	mrmovq 24(%rdi), %r9
+	rmmovq %r10, (%rsi)	# ...and store it to dst
+	rmmovq %r11, 8(%rsi)
+	rmmovq %r8, 16(%rsi)
+	rmmovq %r9, 24(%rsi)
+	andq %r10, %r10		# val <= 0?
+	jle second		# if so,go next item:
+	iaddq $1, %rax		# count++
+second:
+	andq %r11, %r11
+	jle third
+	iaddq $1, %rax
+third:
+	andq %r8, %r8
+	jle forth
+	iaddq $1, %rax
+forth:
+	andq %r9, %r9
+	jle Npos
+	iaddq $1, %rax
+Npos:	
+	iaddq $-4, %rdx		# len--
+	iaddq $32, %rdi		# src++
+	iaddq $32, %rsi		# dst++
+	andq %rdx,%rdx		# len > 0?
+	jg Loop			# if so, goto Loop:
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	ret
+##################################################################
+# Keep the following label at the end of your function
+End:
+#/* $end ncopy-ys */
+
+```
 
 
 ## 总结

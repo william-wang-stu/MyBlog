@@ -104,39 +104,47 @@ $$
 > 引入了平均因素，对噪声有抑制作用；操作简便。
 
 - 垂直边缘检测算子
+
+
 $$
            \begin{bmatrix}
              -1&0&1\\\\
              -1&0&1\\\\
              -1&0&1 
-           \end{bmatrix})
+           \end{bmatrix}
 $$
 
 - 水平边缘检测算子
+
+
 $$
            \begin{bmatrix}
              -1&-1&-1\\\\
              0&0&0\\\\
              1&1&1 
-           \end{bmatrix})
+           \end{bmatrix}
 $$
 #### Sobel
 > 引入了平均因素，增强了最近像素的影像，噪声抑制效果比Prewitt好。
 
 - 垂直边缘检测算子
+
+
 $$
            \begin{bmatrix}
              -1&0&1\\\\
              -2&0&2\\\\
              -1&0&1 
-           \end{bmatrix})
+           \end{bmatrix}
 $$
 
 - 水平边缘检测算子
+
+
 $$
            \begin{bmatrix}
              -1&-2&-1\\\\
              0&0&0\\\\
              1&2&1 
-           \end{bmatrix})
+           \end{bmatrix}
 $$
