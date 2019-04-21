@@ -1,8 +1,3 @@
----
-title: 阅读排行
-date: 2019-03-16 14:08:34
----
-
 <div id="top"></div>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("zA9RaRyULEttsQUty09L5Msu-gzGzoHsz", "Tk82B1uqixrlKgoc33gTlHPX");</script>
@@ -21,7 +16,7 @@ date: 2019-03-16 14:08:34
       title=result.title;
       url=result.url;
       // var content="<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"<br>"+"<font color='#fff'>"+"阅读次数："+time+"</font>"+"<br><br>";
-      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"</p>";
+      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"http://blog.scarboroughcoral.top"+url+"'>"+title+"</a>"+"</p>";
       document.getElementById("top").innerHTML+=content
     }
   }, function (error) {

@@ -9,7 +9,7 @@ comment: true
 photo: 
 ---
 
-{% note default %}
+{% note primary %}
 {% endnote %}
 
 <!-- more -->
