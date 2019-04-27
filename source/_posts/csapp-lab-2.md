@@ -52,7 +52,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15529
 
 想要了解栈帧的结构？我们还是先来回顾（review）以下有哪些和函数栈相关的寄存器吧。（这儿并没有包含浮点寄存器）
 
-![](csapp-lab-2/registers.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/registers.png)
 
 - 所谓调用者保存，就是可以让被调用者（自身不作为另一个调用者）随意使用，也是为了自己用到的数据不被覆盖。
 - 所谓被调用者保存，恰恰与调用者保存相反。
@@ -64,7 +64,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15529
 了解了这些寄存器，我们再来看看栈帧的结构
 
 
-![](csapp-lab-2/stackframe.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/stackframe.png)
 
 就拿函数P的栈帧来说，从栈底到栈顶的方向分别存储以下内容：
 
@@ -79,7 +79,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15529
 
 跟随[孟佬](https://zhuanlan.zhihu.com/p/31269514)用的CGDB，[官网](https://cgdb.github.io/)及[gdb使用方式](http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.pdf)，以下是CGDB运行缺省截图。
 
-![](csapp-lab-2/cgdb.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/cgdb.png)
 
 
 
@@ -107,7 +107,7 @@ cgdb bomb
 
 就会看到如下界面：
 
-![](csapp-lab-2/bomb.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/bomb.png)
 
 这是给我们的主程序，里面主要是炸弹程序的初始化，以及这些炸弹的输入以及输入检测。
 
@@ -148,7 +148,7 @@ cgdb bomb
 
 如果你是第一次做实验的话，这一步你一定要知道：
 
-![](csapp-lab-2/phrase1-input.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase1-input.png)
 
 这六个炸弹都是都是通过一个`read_line`函数从输入流（不管是标准输入还是文件输入重定向）中读取的，返回值为`input`，对应于`%rax`寄存器（存放的一个输入字符串的首地址）。我们看到将`%rax`寄存器的内容转移到`%rdi`寄存器里了，我们知道寄存器`%rdi`用于存放调用函数时的第一个参数。接下来就调用炸弹函数了。
 
@@ -162,7 +162,7 @@ cgdb bomb
 
 第一个炸弹的汇编代码如下所示：
 
-![](csapp-lab-2/phrase1.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase1.png)
 
 第一个算是一个入门的，主要是想让你熟悉一下BombLab的流程。
 
@@ -181,7 +181,7 @@ cgdb bomb
 
 很简单了，使用`x/s 0x402400`按字符串输出这个地址存储的内容（这个可能是我在比较字符串的函数内输出的 :smile: ）：
 
-![](csapp-lab-2/phrase1-inputstr.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase1-inputstr.png)
 
 第一弹，拆除完毕！
 
@@ -189,7 +189,7 @@ cgdb bomb
 
 第二弹，来吧勇士！（好吧，感觉有点中二。）
 
-![](csapp-lab-2/phrase2.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase2.png)
 
 
 
@@ -199,7 +199,7 @@ cgdb bomb
 
 
 
-![](csapp-lab-2/phrase2-readnum.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase2-readnum.png)
 
 然后我们查看一下这个函数内部，发现里面又调用了`sscanf`这个函数（功能是从一个字符串中读取一定格式的数据，和`scanf`一样，除了`scanf`是从标准输入流中读取）。参数顺序分别是，待读取内容的字符串、用于格式读取的格式化字符串，还有各个变量读取后存放的地址。
 
@@ -219,7 +219,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 好了，知道输入的值都到哪儿去了，这样就简单了许多了，然后再看`phrase2`函数：
 
-![](csapp-lab-2/phrase2.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase2.png)
 
 首先看**<+14>**处，第一个数必须是1，不是炸弹就爆炸。
 
@@ -231,7 +231,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 好了，兄嘚，第三炮！
 
-![](csapp-lab-2/phrase3.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase3.png)
 
 
 
@@ -255,7 +255,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 先看主要部分代码：
 
-![](csapp-lab-2/phrase4.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase4.png)
 
 通过这个程序我们可以分析出，除了输入函数和爆炸函数之外，还调用了一个`func4` 函数。输入的是两个数字，存于`%rsp+0x8`和`%rsp+0xc`处。我们还可以分析出，**调用这个函数之后返回值`%eax`必须为0，而且第二个输入的数必须为0。**
 
@@ -266,7 +266,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 - `%rdx`：0xe，即14
 - `%rcx`：第二个数，记作y。不确定会不会用到，看到下面的代码很显然没用使用到，直接被覆盖了。
 
-![](csapp-lab-2/phrase4-func.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase4-func.png)
 
 查看代码，如果你进入了递归是太恶心了，不过也可以分析，好像要求输入x值必须满足是一个数列的元素。那么如何避免递归，看**<+22>**行，可以分析出此时`%ecx`的值为7，如果`%edi`也就是x值如果>=7的话，那就会跳转到**<+36>**，此时将`%eax`置位0（满足返回值为0），然后再比较刚比较的`%edi`和`%ecx`，如果`%edi`<=7的话就结束。所以最终x=7满足条件。
 
@@ -282,7 +282,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 下面就是代码：
 
-![](csapp-lab-2/phrase5.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase5.png)
 
 
 
@@ -319,7 +319,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 首先是第一部分：
 
-![](csapp-lab-2/phrase6-1.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase6-1.png)
 
 首先读入了6个数字，分别放入了`%rsp+0x0、%rsp+0x4、%rsp+0x8、%rsp+0xc、%rsp+0x10、%rsp+0x14`
 
@@ -339,7 +339,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 下面打印的是这六个节点的值和指向下一个节点的地址。
 
-![](csapp-lab-2/phrase6-linklist.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/phrase6-linklist.png)
 
 找到了各节点的值，我们就可以排序得到节点标号的排序，节点标号的排序恰恰是输入6个数字对7求补的值，然后再对7求补即可得到结果`4 3 2 1 6 5`。
 
@@ -349,7 +349,7 @@ int sscanf( const char *buffer, const char *format [, argument ] ... );
 
 完成的一瞬家很爽！秀一下结果！
 
-![](csapp-lab-2/success.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-2/success.png)
 
 
 

@@ -26,7 +26,7 @@ Stay hungry. Stay foolish.
 ### 工具介绍
 > 今天意外地发现了一个神奇的工具，是一个将webpack打包后的文件关系可视化的工具，叫**webpack-bundle-analyzer**，这里是npm的工具[链接](https://www.npmjs.com/package/webpack-bundle-analyzer),其效果如下。
 
-![](webpack-optimize/analyzer.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/analyzer.png)
 
 ### 优化第一步——第三方依赖分离
 
@@ -45,7 +45,7 @@ module.exports = {
 
 > 然后打包后的结果是这样的。
 
-![](webpack-optimize/optimize1.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize1.png)
 
 > 但是为毛打包的第三方依赖会重复？这不就相当于什么也没干而且还增加了负担？我们希望只有一份vue和vue-router然后让这两部分引用就行了。解决办法如下：
 
@@ -64,7 +64,7 @@ module.exports = {
 
 > 这样就将公共的块抽取出来放到vendor中，结果如下：
 
-![](webpack-optimize/optimize2.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize2.png)
 
 > 这样第三方依赖就提取出来了，然后右边的业务代码单独分到一个打包文件中。
 
@@ -102,7 +102,7 @@ module.exports = {
 ```
 > 这段代码即判断打包模块是否是第三方依赖的js，若是则放到vendor里。效果同上：
 
-![](webpack-optimize/optimize2.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize2.png)
 
 ### 优化第三步——业务代码打包优化
 
@@ -123,18 +123,18 @@ const GoodsList=()=> import('@/components/GoodsList.vue')
 
 > 打包结果如下：
 
-![](webpack-optimize/optimize3.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize3.png)
 
 > 就将需要懒加载的模块单独打包了，**0.chunk.js**
 
 > 懒加载前后页面资源变化
 - 主页
-![](webpack-optimize/optimize4.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize4.png)
 - 其他路由页
-![](webpack-optimize/optimize5.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize5.png)
 
 #### 重复依赖提取
-![](webpack-optimize/optimize6.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize6.png)
 > 有时候我们会发现不同的页面用了相同第三方依赖，比如说**axios**（类似jQuery中的Ajax），我们需要将这些公共的依赖提取出来，这就需要再一次请教webpack大佬了。
 
 ```JavaScript
@@ -152,7 +152,7 @@ new webpack.optimize.CommonsChunkPlugin({
 
 > 这样，公共的依赖代码就提取出来了，效果如下：
 
-![](webpack-optimize/optimize7.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/webpack-optimize/optimize7.png)
 
 > 再一次感受到了webpack的强大之处，然后这个webpack-bundle-analyzer这个工具的有趣与强大。
 

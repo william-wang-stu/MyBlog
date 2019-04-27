@@ -107,7 +107,7 @@ typedef struct bitmapFileHeader {
 
 > 大图没有保留，只剩小的测试图了，不过效果就是有线条（RGB像素字节错位所致）
 
-![](bitmap-resolver-rectify/n4xout.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/bitmap-resolver-rectify/n4xout.png)
 
 根据测试，BMP的宽度字节数不是4的倍数时，也有特别情况，这种情况下我的程序也能处理。为什么呢？
 

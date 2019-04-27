@@ -58,7 +58,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15530
 
 ### 处理器分类
 
-![](concurrency-parallelism/solver-class.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/concurrency-parallelism/solver-class.png)
 
 #### 单处理器
 {% note info no-icon %}
@@ -93,7 +93,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15530
 - L1级Cache分为两个部分，一个保存最近取到的指令，一个存放数据
 - 所有核共享L3级Cache
 
-![](concurrency-parallelism/multikernel.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/concurrency-parallelism/multikernel.png)
 
 {% endnote %}
 

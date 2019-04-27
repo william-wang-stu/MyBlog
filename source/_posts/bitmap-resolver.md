@@ -40,7 +40,7 @@ photo: http://s1.1zoom.me/b4650/589/Texture_Geometry_529246_1920x1080.jpg
 
 找了一个便于观察的图像：
 
-![](bitmap-resolver/origin.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/bitmap-resolver/origin.png)
 
 
 
@@ -136,7 +136,7 @@ for (size_t i = 0; i < itemCounts; i++)//itemCounts：像素总数
 
 - 结果
 
-![](bitmap-resolver/rdivision.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/bitmap-resolver/rdivision.png)
 
 
 
@@ -164,7 +164,7 @@ for (size_t i = 0; i < itemCounts; i++)
 
 - 结果
 
-![](bitmap-resolver/grey.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/bitmap-resolver/grey.png)
 
 
 
@@ -186,7 +186,7 @@ for (size_t i = 0; i < itemCounts; i++)
 
 - 结果
 
-![](bitmap-resolver/degrey.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/bitmap-resolver/degrey.png)
 
 ## 代码
 

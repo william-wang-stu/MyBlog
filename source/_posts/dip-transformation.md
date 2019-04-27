@@ -45,7 +45,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15538
 
 仅对8位灰度图进行处理，RGB真彩色处理同理。
 
-![](dip-transformation/3-3.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/3-3.png)
 
 ## 整体思路
 
@@ -53,7 +53,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15538
 
 利用后向映射进行变换，即**根据转换后图像的像素位置确定转换前的像素位置，得到像素灰度值并赋值给转换后图像像素**。
 
-![](dip-transformation/back.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/back.png)
 
 
 ## 实验内容
@@ -136,7 +136,7 @@ y \\\\
 
 > 宽×3，高×4
 
-![](dip-transformation/scale.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/scale.png)
 
 ### 0x02 图像平移
 > 向左下平移
@@ -193,7 +193,7 @@ y \\\\
 \end{matrix}
 \right] $$
 
-![](dip-transformation/shift.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/shift.png)
 
 ### 0x03 图像镜像
 
@@ -255,11 +255,11 @@ y \\\\
 
 > 水平镜像
 
-![](dip-transformation/x-mirror.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/x-mirror.png)
 
 > 垂直镜像
 
-![](dip-transformation/y-mirror.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/y-mirror.png)
 
 ### 0x04 图像旋转
 
@@ -317,7 +317,7 @@ y \\\\
 
 > 顺时针旋转45°
 
-![](dip-transformation/rotate.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dip-transformation/rotate.png)
 ### 0x05 图像透视
 
 没做。

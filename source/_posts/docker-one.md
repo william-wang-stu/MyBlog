@@ -17,7 +17,7 @@ categories:
 ### Docker的本地博客
 
 > 这是我用组合镜像工具搭建的一个本地博客，用到了nginx反向代理服务器，ghost博客镜像（npm包管理），还一个mysql镜像。
-![](docker-one/docker.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/docker-one/docker.png)
 
 ### 前言
 

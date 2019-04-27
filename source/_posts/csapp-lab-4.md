@@ -301,7 +301,7 @@ Part B 只需要按照writeup查看3e课本iaddq指令的阶段实现即可实�
 
 修改内容如下图：
 
-![](csapp-lab-4/seq.jpg)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-4/seq.jpg)
 
 hcl代码如下：
 
@@ -542,7 +542,7 @@ Part C 的具体内容就是加速内存元素的拷贝问题。修改`ncopy.ys`
 
 首先添加iaddq指令，原来是通过`irmovq`和`addq`来实现的，改为iaddq指令后起到很微弱的效果，并不能明显的减少CPE，如果你的irmovq指令在循环内部那就另说了，当然也不是最快。
 
-![](csapp-lab-4/pipe.jpg)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-4/pipe.jpg)
 
 具体代码如下：
 
@@ -965,7 +965,7 @@ End:
 
 然而还是0分。
 
-![](csapp-lab-4/result.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-4/result.png)
 
 主要考虑还是要减少bubble，还有程序优化问题。
 
@@ -974,7 +974,7 @@ End:
 #### Version 2.0
 
 结果：
-![](csapp-lab-4/result2.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-4/result2.png)
 
 
 所作修改：

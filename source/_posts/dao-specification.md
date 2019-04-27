@@ -40,4 +40,4 @@ categories:
 
 #### 整体类图
 
-![](dao-specification/UMLer.jpg)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/dao-specification/UMLer.jpg)

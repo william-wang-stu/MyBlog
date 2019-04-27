@@ -76,11 +76,11 @@ photo: http://www.cncd8.com/uploads/allimg/120310/1-120310160348.jpg
 
 1. **x86**
 
-   ![](byte-alignment/x86-size.png)
+   ![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/byte-alignment/x86-size.png)
 
 2. **x64**
 
-![](byte-alignment/x64-size.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/byte-alignment/x64-size.png)
 
 
 

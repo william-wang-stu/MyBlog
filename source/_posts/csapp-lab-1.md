@@ -490,7 +490,7 @@ unsigned floatPower2(int x) {
 
 > 很遗憾，最终的一个题目`floatPower2`始终无法通过，不过不是逻辑上的错误，在VS2017上完全可以运行，没有进入死循环。（个人感觉可能是官方的评测出了问题:-(，:cry: ）
 
-![](csapp-lab-1/result.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-1/result.png)
 
 
 

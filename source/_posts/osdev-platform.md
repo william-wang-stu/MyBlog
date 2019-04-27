@@ -43,7 +43,7 @@ categories:
 
 ### 运行效果
 
-![](osdev-platform/osdev.png)
+![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/osdev-platform/osdev.png)
 
 
 ### 有关文档
