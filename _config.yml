@@ -24,7 +24,7 @@ githubEmojis:
 lazyload:
   enable: true 
   onlypost: true
-  loadingImg: # eg /images/loading.gif 
+  loadingImg: https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/global-image/loading.gif
 
 # 查找
 search:
