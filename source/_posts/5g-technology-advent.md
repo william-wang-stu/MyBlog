@@ -60,7 +60,7 @@ photo: https://www.eng.it/resources/events/img/5g%20in%20rome_1920_1080.jpg
 
 存储器层次结构：
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/5g-technology-advent/1552395582880.png)
+![](5g-technology-advent/1552395582880.png)
 
 5G时代的到来，打破了网速的桎梏，这不就是实现了真正的**存储器层次结构**的最后一层吗？
 

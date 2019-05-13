@@ -107,23 +107,23 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15525
 
 ### 24位真彩色（原图）
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/grayscale-histogram-resolver/1.png)
+![](grayscale-histogram-resolver/1.png)
 
 ### 8位灰度图（转化后的8位灰度图）
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/grayscale-histogram-resolver/2.png)
+![](grayscale-histogram-resolver/2.png)
 
 ### 均衡化8位灰度图（根据8位灰度图均衡化后的灰度图）
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/grayscale-histogram-resolver/3.png)
+![](grayscale-histogram-resolver/3.png)
 
 ### 未均衡化8位灰度图的统计直方图
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/grayscale-histogram-resolver/4.png)
+![](grayscale-histogram-resolver/4.png)
 
 ### 均衡化8位灰度图的统计直方图
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/grayscale-histogram-resolver/5.png)
+![](grayscale-histogram-resolver/5.png)
 
 
 

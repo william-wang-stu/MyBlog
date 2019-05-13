@@ -33,7 +33,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15549
 上次做了图像物体边缘检测，不过由于课程并没有讲完，只做了部分，待总结。这次做的是图像分割中的阈值分割。
 
 阈值分割是一种图像分割方法，用于分割不同物体，比如说前景和背景的分割、图片中关键信息的提取（如下图，来自网络）。本次实验是针对8位灰度图的二值化处理。
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/https://upload-images.jianshu.io/upload_images/2649969-3af798de1b0b90a1.png?imageMogr2/auto-orient/)
+![](https://upload-images.jianshu.io/upload_images/2649969-3af798de1b0b90a1.png?imageMogr2/auto-orient/)
 
 {% note primary no-icon %}
 数字图像处理全部实验博客总结请查看[扶桑树叶之DIP](/tags/DIP/)
@@ -60,13 +60,13 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15549
 
 - 原图
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/origin.png)
+![](threshold-segmentation/origin.png)
 
 然后转换为8位灰度图，对8位灰度图进行二值化处理。
 
 - 转8位灰度图
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/gray.png)
+![](threshold-segmentation/gray.png)
 
 ### 0x02 人为观察直方图给定阈值T进行二值化
 
@@ -77,11 +77,11 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15549
 
 ***结果如下：***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-seed.png)
+![](threshold-segmentation/threshold-seed.png)
 
 ***相应的直方图，灰色线条为所选的阈值，图像从下向上灰度增加***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-histogram-seed.png)
+![](threshold-segmentation/threshold-histogram-seed.png)
 
 这样看来是有一定问题的，并没有完全将前景和背景分割出来。
 
@@ -103,11 +103,11 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15549
 
 ***结果如下：***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-iteration.png)
+![](threshold-segmentation/threshold-iteration.png)
 
 ***相应的直方图，灰色线条为所选的阈值，图像从下向上灰度增加***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-histogram-iteration.png)
+![](threshold-segmentation/threshold-histogram-iteration.png)
 
 这样看来是有一定问题的，并没有完全将前景和背景分割出来。
 
@@ -143,11 +143,11 @@ $$
 
 ***结果如下：***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-otsu.png)
+![](threshold-segmentation/threshold-otsu.png)
 
 ***相应的直方图，灰色线条为所选的阈值，图像从下向上灰度增加***
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/threshold-segmentation/threshold-histogram-otsu.png)
+![](threshold-segmentation/threshold-histogram-otsu.png)
 
 效果较好，这也是为什么当前仍然使用这个算法的原因。
 

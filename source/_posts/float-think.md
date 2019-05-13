@@ -92,7 +92,7 @@ int是4字节类型，也就是32位。int的存储格式就是32位补码。这
 
 float的存储格式正如下图，在这里我们只考虑简单的单精度浮点数和双精度浮点数：
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/float-think/float.png)
+![](float-think/float.png)
 
 ### 科学计数法
 

@@ -29,7 +29,7 @@ categories:
 
 > 在看这些概念的过程中，你可以结合这张图来看。虽然有些繁体字，就当`涨姿势了`我滴乖。
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/daul-system-principle/daul.jpg)
+![](daul-system-principle/daul.jpg)
 
 #### BIOS
 我靠，是你！`BIOS`，之前安装`virtual box`的时候还见过你，当时让我开启一下`Intel VT-x`，然后就需要让`BIOS`大哥帮忙。操作系统老师好像也讲过，好像。。。

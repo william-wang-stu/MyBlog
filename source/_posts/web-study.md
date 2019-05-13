@@ -22,7 +22,7 @@ categories: Web 前端
 
 > web前端就是你打开浏览器进入一个网页所看到的，比如你现在正在看的这篇博客，比如你打开的bilibili，斗鱼直播等等<br>
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/web-study/web前端.png)
+![](web-study/web前端.png)
 
 > 可能你会混淆web前端和ui设计这两个概念。web前端工程师是根据ui设计师设计的原型来编写代码形成网页的，当然也有一些人同时做这两个工作。
 
@@ -38,7 +38,7 @@ categories: Web 前端
 > 当你真正接触项目以后，你会发现这些软件项目（或者直接就拿web前端来说）和其他类项目（建筑行业，汽车行业）都有许多相同之处。<br>
  就拿建筑行业盖房子为例吧，需要对房子的布局进行设计（哪儿是厨房，哪儿是客厅，占多大区域），然后对样式进行设计（墙漆刷什么颜色的，门要装什么样的），最后在设计一下细微的东西（窗帘是横着拉还是竖着拉，门是双侧门还是单侧门）。<br>
  而web前端也类似，需要对各个模块布局进行设计（多大，位置在哪），然后样式设计（需要什么颜色，字体大小多少，需要什么背景图片），然后是脚本控制（点击按钮会触发什么事件，弹出窗口？跳转页面？发生动画？）<br>
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/web-study/布局.png)
+![](web-study/布局.png)
 
 >  啰啰嗦嗦说这么多，这和大法宝HTML，CSS，Javascript有什么关系呢？先看看这三个东西的全称是什么。HTML（**HyperText Markup Language，超级文本标记语言**），CSS（**Cascading Style Sheets，层叠样式表**），Javascript（JavaScript一种**直译式脚本语言**，是一种动态类型、弱类型、基于原型的语言）。然后你应该差不多明白了，CSS是控制布局样式的，javascript是控制脚本的，然后HTML是控制结构的（哪个是按钮，哪个是文本框）。再直接一点，CSS是控制HTML结构的样式，Javascript是控制HTML的脚本。
 
@@ -54,17 +54,17 @@ categories: Web 前端
 - VS Code
 [官网](https://code.visualstudio.com/)
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/web-study/edit.png)
+![](web-study/edit.png)
 
 - sublime text
 [官网](https://www.sublimetext.com)
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/web-study/sublime.png)
+![](web-study/sublime.png)
 
 - atom
 [官网](https://atom.io/)
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/web-study/atom.png)
+![](web-study/atom.png)
 
 ### 寒假祝福语
 >  祝各位学弟学妹新年快乐！假期是赶英超美鹤立鸡群青出于蓝胜于蓝长江后浪推前浪的好时机，假期少不了娱乐游玩，也少不了学习，希望各位能够在寒假放松的同时好好学习，过一个充实的寒假，让这个寒假在你的人生路上变得有意义。最后再说一句，**这个[网站](https://www.imooc.com/)对你很重要**。

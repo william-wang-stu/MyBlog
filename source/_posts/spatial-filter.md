@@ -61,7 +61,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15531
 
 首先展示一下原图（因为需要找噪声比较明显的图像，所以没找到像素比较大的和attractive的 :cry:）：
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray1.png)
+![](spatial-filter/gray1.png)
 
 
 
@@ -146,12 +146,12 @@ void AverageProcessing(const char * src, const char * output)
 
 - 一次迭代运行结果
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray2.png)
+![](spatial-filter/gray2.png)
 
 
 - 三次迭代运行结果
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray2-3.png)
+![](spatial-filter/gray2-3.png)
 ### 中值滤波
 
 
@@ -210,12 +210,12 @@ void MedianFiltering(const char * src, const char * output)
 
 - 一次迭代运行结果
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray3.png)
+![](spatial-filter/gray3.png)
 
 
 - 三次迭代运行结果
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray3-3.png)
+![](spatial-filter/gray3-3.png)
 
 ### 结果
 
@@ -223,27 +223,27 @@ void MedianFiltering(const char * src, const char * output)
 
 - 原图
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray1.png)
+![](spatial-filter/gray1.png)
 
 - 平均处理（一次处理）
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray2.png)
+![](spatial-filter/gray2.png)
 
 - 平均处理（三次迭代）
 
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray2-3.png)
+![](spatial-filter/gray2-3.png)
 
 - 中值滤波（一次处理）
 
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray3.png)
+![](spatial-filter/gray3.png)
 
 
 - 中值滤波（三次迭代）
 
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/spatial-filter/gray3-3.png)
+![](spatial-filter/gray3-3.png)
 
 ### 两者对比
 

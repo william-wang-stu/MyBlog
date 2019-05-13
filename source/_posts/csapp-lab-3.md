@@ -74,12 +74,12 @@ Attack分为两个部分，代码注入攻击和ROP（Return-Oriented Program）
 
 第一个，只是练手的，take it easy...
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase1.png)
+![](csapp-lab-3/phrase1.png)
 
 根据给出的test函数和touch1函数的代码，我们可以看出test函数并没有调用touch1函数，而是只调用了一个getbuf函数，这个函数就是获取输入的内容的，而getbuf函数允许最大输入0x28（十进制40）个字节。那么思路很明显了，只需要利用buffer溢出，修改ret的值就好了（因为栈内buffer的下面就是ret的返回地址了）。也就是说只需要输入40个字节任意字符+touch1的地址就好了。
 
 结果如下：
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase1-success.png)
+![](csapp-lab-3/phrase1-success.png)
 
 #### # Phase2
 
@@ -107,14 +107,14 @@ Attack分为两个部分，代码注入攻击和ROP（Return-Oriented Program）
 
 注入代码如下：
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase2-insert.png)
+![](csapp-lab-3/phrase2-insert.png)
 
 然后需要做的事就是将这段汇编代码用`gcc -c xxx`来汇编，并用`objdump -d xxx`来查看汇编指令对应的字节序列了（如上图）。
 得到字节序列之后还需要将他和buffer的其他部分还有我们注入代码的首地址放入。然后通过hex2raw程序将其按照原始字节序列输入。
 
 结束！运行结果如下：
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase2-success.png)
+![](csapp-lab-3/phrase2-success.png)
 
 
 
@@ -141,11 +141,11 @@ Attack分为两个部分，代码注入攻击和ROP（Return-Oriented Program）
 
 **执行hexmatch函数前：**
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase3-rsp-old.png)
+![](csapp-lab-3/phrase3-rsp-old.png)
 
 **执行hexmatch函数后：**
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase3-rsp-new.png)
+![](csapp-lab-3/phrase3-rsp-new.png)
 
 
 
@@ -161,7 +161,7 @@ Attack分为两个部分，代码注入攻击和ROP（Return-Oriented Program）
 
 完事！
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/csapp-lab-3/phrase3-success.png)
+![](csapp-lab-3/phrase3-success.png)
 
 
 

@@ -58,7 +58,7 @@ There are two programs in this situation.
 
 - Let's see the reference and pointer in underlying assembly code :-)
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference.png)
+![](c-reference-pointer/reference.png)
 
 In this program,we can conclude these results:
 
@@ -72,7 +72,7 @@ In this program,we can conclude these results:
 
 - Let's see the instance of reference in calling functions.
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference2.png)
+![](c-reference-pointer/reference2.png)
 
 We can conclude these results:
 
@@ -83,7 +83,7 @@ We can conclude these results:
 
 Let's talk about reference in struct type variables.
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference-struct.png)
+![](c-reference-pointer/reference-struct.png)
 
 In this program,we can conclude that:
 
@@ -96,24 +96,24 @@ The class-type instance is the same as the struct.
 
 It's easy! You can jump it!
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference-class.png)
+![](c-reference-pointer/reference-class.png)
 
 ### 0x04 Class type pointer
 
 Let's have a look at the instance defined by `new`:
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference-class-new.png)
+![](c-reference-pointer/reference-class-new.png)
 
 We can conclude that the pointer is just the address points to the heap somewhere.Of course,the address in the heap is undefined,because it's dynamic and the assembly code is `objdump` by `gcc -c(Compile and assemble, but do not link)`
 
 ### 0x05 About the segment
 In the situation,I want to have a look at the global variables,but I don't find it in the assembly code.It's in the **data segment**!
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/reference.png)
+![](c-reference-pointer/reference.png)
 
 Let's retrospect the segment partition:
 
-![](https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-reference-pointer/segment.jpg)
+![](c-reference-pointer/segment.jpg)
 
 
 
