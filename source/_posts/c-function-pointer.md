@@ -10,7 +10,7 @@ tags:
 - Express in English
 categories: 
 - C
-photo: https://blog-resource-1259125863.cos.ap-beijing.myqcloud.com/images/c-function-pointer/20140317171259_KCBfP.jpeg
+photo: /2019/04/06/c-function-pointer/20140317171259_KCBfP.jpeg
 ---
 
 {% note primary %}
