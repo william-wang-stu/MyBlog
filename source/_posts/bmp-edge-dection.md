@@ -1,6 +1,6 @@
 ---
 title: 边缘检测
-mathjax: false
+mathjax: true
 copyright: true
 comment: true
 date: 2019-05-14 10:28:14
@@ -34,19 +34,17 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15578
 
 {% endnote %}
 
-## Body
+
+
+## 实验内容
 
 这次实验内容是边缘检测，一开始的时候做了一部分了，是针对`prewitt`算子和`sobel`算子的，剩下`log`和`canny`方法还没做，canny选做。
-
-### 边缘检测
-
-#### 实验内容
 
 - 使用Prewitt算子实现边缘检测
 - 使用Sobel算子实现边缘检测
 - 使用LOG算子实现边缘检测
 
-#### 实验过程
+## 实验过程
 
 
 
@@ -54,11 +52,12 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15578
 
 主要方法有以下几种：
 
-##### Prewitt
+### Prewitt
 
 > 引入了平均因素，对噪声有抑制作用；操作简便。
 
 - 垂直边缘检测算子
+
 
 $$
      \begin{bmatrix}
@@ -78,7 +77,7 @@ $$
        \end{bmatrix}
 $$
 
-##### Sobel
+### Sobel
 
 > 引入了平均因素，增强了最近像素的影像，噪声抑制效果比Prewitt好。
 
@@ -102,7 +101,7 @@ $$
        \end{bmatrix}
 $$
 
-##### LOG
+### LOG
 
 > 该算子首先用高斯函数对图像作平滑滤波处理，然后才使用Laplacian算子检测边缘，因此克服了Laplacian算子抗噪声能力比较差的缺点，但是在抑制噪声的同时也可能将原有的比较尖锐的边缘也平滑掉了，造成这些尖锐边缘无法检被测到。
 
@@ -116,7 +115,7 @@ $$
 \end{bmatrix}
 $$
 
-#### 实验结果
+## 实验结果
 
 - 原图
 
