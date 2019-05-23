@@ -40,3 +40,96 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15578
 
 ### 边缘检测
 
+#### 实验内容
+
+- 使用Prewitt算子实现边缘检测
+- 使用Sobel算子实现边缘检测
+- 使用LOG算子实现边缘检测
+
+#### 实验过程
+
+
+
+> 用于检测图像中一些物体边缘的地方。比如无人机、自动驾驶障碍物检测等会使用到。
+
+主要方法有以下几种：
+
+##### Prewitt
+
+> 引入了平均因素，对噪声有抑制作用；操作简便。
+
+- 垂直边缘检测算子
+
+$$
+     \begin{bmatrix}
+       -1&0&1\\\\
+       -1&0&1\\\\
+       -1&0&1 
+     \end{bmatrix}
+$$
+
+- 水平边缘检测算子
+
+$$
+       \begin{bmatrix}
+         -1&-1&-1\\\\
+         0&0&0\\\\
+         1&1&1 
+       \end{bmatrix}
+$$
+
+##### Sobel
+
+> 引入了平均因素，增强了最近像素的影像，噪声抑制效果比Prewitt好。
+
+- 垂直边缘检测算子
+
+$$
+        \begin{bmatrix}
+         -1&0&1\\\\
+         -2&0&2\\\\
+         -1&0&1 
+       \end{bmatrix}
+$$
+
+- 水平边缘检测算子
+
+$$
+        \begin{bmatrix}
+         -1&-2&-1\\\\
+         0&0&0\\\\
+         1&2&1 
+       \end{bmatrix}
+$$
+
+##### LOG
+
+> 该算子首先用高斯函数对图像作平滑滤波处理，然后才使用Laplacian算子检测边缘，因此克服了Laplacian算子抗噪声能力比较差的缺点，但是在抑制噪声的同时也可能将原有的比较尖锐的边缘也平滑掉了，造成这些尖锐边缘无法检被测到。
+
+$$
+\begin{bmatrix}
+    0&0&-1&0&0\\\\
+    0&-1&-2&-1&0\\\\
+    -1&-2&16&-2&-1\\\\
+    0&-1&-2&-1&0\\\\
+    0&0&-1&0&0
+\end{bmatrix}
+$$
+
+#### 实验结果
+
+- 原图
+
+![3-3](bmp-edge-dection/3-3.png)
+
+- Prewitt横纵叠加
+
+![3-prewit](bmp-edge-dection/3-prewit.png)
+
+- Sobel纵横叠加
+
+![3-sobel](bmp-edge-dection/3-sobel.png)
+
+- Log算子
+
+![3-log](bmp-edge-dection/3-log.png)
