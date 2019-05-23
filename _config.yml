@@ -135,9 +135,3 @@ deploy:
   type: git
   repo: https://gh_token@github.com/ScarboroughCoral/MyBlog.git
   branch: master
-
-# symbols_count_time:
-#   symbols: true
-#   time: true
-#   total_symbols: true
-#   total_time: true
