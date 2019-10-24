@@ -8,7 +8,7 @@ tags:
 - JavaScript
 categories:
 - Computer Science
-photo: http://b-ssl.duitang.com/uploads/blog/201512/11/20151211134551_N3dTX.jpeg
+photo: http://hdwpro.com/wp-content/uploads/2016/02/Free-1920x1080-Wallpaper.jpeg
 ---
 
 {% note primary %}
@@ -49,6 +49,6 @@ let big=2n**70n;//1180591620717411303424n
 
 另外，JS也有两个常数表示能够表示的最大和最小数：`Number.MAX_VALUE`和`Number.MIN_VALUE`。其中最大数是比Infinity小点的数，它的二进制表示是指数除了最低一位是0其他全1，尾数全1；最小数则是最接近0的数，即指数全0（考虑偏移），尾数最低位为1其他全0，计算结果如图，偏移在上次[浮点数博客](/2019/03/03/float-think/)中讲过，即$\lfloor\frac{2^{EMax}-1}{2}\rfloor$，比如11位指数，中间数就是$\lfloor\frac{2^{11}-1}{2}\rfloor=1023$。。
 
-![](ieee754-float-instance-js/754-js.png)
+![](754-js.png)
 
 
