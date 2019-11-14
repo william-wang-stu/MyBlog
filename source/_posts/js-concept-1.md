@@ -9,7 +9,7 @@ tags:
 - 33 JS Concept
 categories:
 - JavaScript
-photo: http://b-ssl.duitang.com/uploads/item/201804/24/20180424214451_5lJat.png
+photo: http://b-ssl.duitang.com/uploads/item/201804/24/20180424214546_Ru3vN.png
 ---
 
 {% note primary %}
