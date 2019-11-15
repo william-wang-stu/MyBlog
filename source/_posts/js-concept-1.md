@@ -24,7 +24,7 @@ photo: http://b-ssl.duitang.com/uploads/item/201804/24/20180424214546_Ru3vN.png
 
 因为看过CSAPP这本书，关于C语言的函数栈已经了解的比较透彻。实际上JavaScript的函数调用栈也是类似的。
 
-![](js-concept-1/stackframe.png)
+![](stackframe.png)
 
 再来总结一下：
 - 一个函数被调用时，就会构造这个函数调用所需要的栈帧

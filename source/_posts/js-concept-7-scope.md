@@ -97,14 +97,35 @@ dogYears;
 - 用`let`和`const`声明的变量是属于块级作用域的，而不是函数作用域。
 
 ### 词法作用域（lexical scope）
+>Variables in JavaScript are lexically scoped, so the static structure of a program determines the scope of a variable (it is not influenced by, say, where a function is called from).
 
-**词法作用域就是可以通过源代码来看出哪个变量属于哪个作用域，不会根据函数被调用的上下文改变，词法和静态（static）可以看做是一样的。**
+词法作用域就是可以通过源代码来看出哪个变量属于哪个作用域，不会根据函数被调用的上下文改变，词法和静态（static）可以看做是一样的。词法作用域根据声明变量的位置来确定该变量可被访问的位置。
+
+看个例子：
+
+```javascript
+function makeFunc() {
+  var name = 'Mozilla';
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+```
+
+`displayName`中可以访问外部函数`makeFunc`的变量`name`，而`displayName`实际调用时`makeFunc`的栈帧已经弹出，此时却还能访问`name`。词法作用域是通过静态代码看的，和具体执行无关。这其实是闭包提供的作用。
+
+
 
 ### 作用域链
 > 当你在作用域S中访问父作用域的局部变量是可以的，而访问兄弟作用域的局部变量是不可以的。**这可以通过作用域链来理解**
 
 - 存在一个全局环境，里面存的是全局变量（函数）
-- 函数通过内部的`[[Scope]]`属性来指向它的作用域
+- 环境里的函数条目会指向函数对象
+- 函数对象通过内部的`[[Scope]]`属性来指向它的作用域
 - 函数被调用时，会为此函数作用域创建一个环境，这个环境通过`outer`属性指向父环境
 - 作用域会形成一条链
 
