@@ -100,6 +100,20 @@ dogYears;
 
 **词法作用域就是可以通过源代码来看出哪个变量属于哪个作用域，不会根据函数被调用的上下文改变，词法和静态（static）可以看做是一样的。**
 
+### 作用域链
+> 当你在作用域S中访问父作用域的局部变量是可以的，而访问兄弟作用域的局部变量是不可以的。**这可以通过作用域链来理解**
+
+- 存在一个全局环境，里面存的是全局变量（函数）
+- 函数通过内部的`[[Scope]]`属性来指向它的作用域
+- 函数被调用时，会为此函数作用域创建一个环境，这个环境通过`outer`属性指向父环境
+- 作用域会形成一条链
+
+如下图：
+
+![](http://speakingjs.com/es5/images/spjs_2001.png)
+
+函数执行栈是动态的，而作用域链可以看做静态的（或者说是词法的，Lexical）。
+
 ## 相关话题
 
 ### 变量提升（变量声明提升，variables declaration hoisted）
@@ -144,7 +158,7 @@ function f() {
 ```
 
 - 方法一：使用`let`（因为`let`是块级作用域的
-- 方法二：立即执行函数（利用`var`是函数作用域的，`ES5`时是一个常见的编程模式。
+- 方法二：立即执行函数(`IIFE,Immediately Invoked Function Expression`)（利用`var`是函数作用域的，`ES5`时是一个常见的编程模式。**但是效率比较低**
 
 ```javascript
 function f() {
@@ -157,6 +171,47 @@ function f() {
 }
 ```
 
+### 关于“立即执行函数的问题”（立即执行函数表达式
+
+#### 一个注意事项
+
+看个例子，如果第一个立即执行函数后面不加分号，那么第二个立即执行函数会当做参数。**所以这种情况需要注意加分号**
+
+```javascript
+(function () {
+    ...
+}()) // no semicolon
+(function () {
+    ...
+}());
+```
+
+#### 利用`prefix operators`解决上述分号问题
+
+```javascript
+!function () { // open IIFE
+    // inside IIFE
+}(); // close IIFE
+
+//or
+
+void function () { // open IIFE
+    // inside IIFE
+}(); // close IIFE
+
+```
+
+#### 如果函数定义已经处于一个表达式中，那么可以直接调用
+
+```javascript
+var File = function () { // open IIFE
+    var UNTITLED = 'Untitled';
+    function File(name) {
+        this.name = name || UNTITLED;
+    }
+    return File;
+}(); // close IIFE
+```
 
 
 ## Reference
