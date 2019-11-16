@@ -8,7 +8,7 @@ tags:
 - JavaScript
 categories:
 - Computer Science
-photo: http://hdwpro.com/wp-content/uploads/2016/02/Free-1920x1080-Wallpaper.jpeg
+photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573900783016&di=91e30ae74ee2ae110d8cbc4a707bafdc&imgtype=0&src=http%3A%2F%2Fres.kaifu.com%2Fisy%2Fupload%2Fbooklet%2F20120911%2F0m3xz10fsvefjdd0_watermark.jpg
 ---
 
 {% note primary %}
