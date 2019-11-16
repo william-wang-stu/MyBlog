@@ -94,7 +94,7 @@ dogYears;
 ### 块级作用域（block scope）
 > 大括号“{}”之间称为块级作用域，当然函数作用域也是块级作用域。
 
-- 用`let`和`const`声明的变量是属于块级作用域的，而不是函数作用域。
+- 用`let`和`const`声明的变量是属于块级作用域的，而不是函数作用域。（**实际上可以看做立即执行函数内部的`var`**
 
 ### 词法作用域（lexical scope）
 >Variables in JavaScript are lexically scoped, so the static structure of a program determines the scope of a variable (it is not influenced by, say, where a function is called from).
