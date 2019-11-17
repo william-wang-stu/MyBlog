@@ -1,5 +1,5 @@
 ---
-title: JavaScript必知33个概念系列：函数调用栈
+title: JavaScript必知33个概念系列：函数调用栈（执行上下文）
 mathjax: false
 copyright: true
 comment: true
@@ -8,12 +8,13 @@ tags:
 - JavaScript
 - 33 JS Concept
 categories:
+- Front-End Development
 - JavaScript
 photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574495462&di=d20c318c7062ecf905858be5622bc110&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.tuwandata.com%2Fv2%2Fthumb%2Fall%2FZTZkNSwwLDAsNCwzLDEsLTEsMSw%3D%2Fu%2Fwww.tuwan.com%2Fuploads%2Fallimg%2F1508%2F26%2F693-150R61U622.jpg
 ---
 
 {% note primary %}
-函数调用栈。
+JavaScript的执行上下文。
 {% endnote %}
 
 <!-- more -->
@@ -32,7 +33,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15744
 - 函数调用结束后，该函数的栈帧会被弹出，即一些局部变量会失效。
 
 
-## JavaScript的函数调用栈
+## JavaScript的函数调用栈（执行上下文）
 
 一些关键点：
 

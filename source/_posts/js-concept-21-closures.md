@@ -8,6 +8,7 @@ tags:
 - JavaScript
 - 33 JS Concept
 categories:
+- Front-End Development
 - JavaScript
 photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573816110044&di=bbf755f77dcad357ef6378a92697a228&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2Fw1920h1080%2F20180303%2Fdc73-fwnpcnt5489126.png
 ---

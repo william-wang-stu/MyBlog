@@ -8,6 +8,7 @@ tags:
 - JavaScript
 - 33 JS Concept
 categories:
+- Front-End Development
 - JavaScript
 photo: http://07imgmini.eastday.com/mobile/20181002/84ec6a264fd6d97d019837dd57c75021_wmk.jpeg
 ---
@@ -138,7 +139,7 @@ myFunc();
 ## 相关话题
 
 ### 变量提升（变量声明提升，variables declaration hoisted）
-> JavaScript将变量的声明提升到该变量的直接作用域下的开始处，变量的赋值并不提升。函数定义也会进行提升，因此作用域下函数定义在前在后没多大区别。
+> JavaScript将变量的声明提升到该变量的直接作用域下的开始处，变量的赋值并不提升（执行上下文创建时已经为变量分配空间并赋值为`undefined`，这就好像是“变量提升”了）。函数定义也会进行提升，因此作用域下函数定义在前在后没多大区别。
 
 
 **仅对于`var`声明的变量进行提升，对`const`、`let`声明的变量不适用。**
