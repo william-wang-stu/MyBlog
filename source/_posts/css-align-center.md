@@ -22,4 +22,15 @@ photo: http://i3.sinaimg.cn/gm/o/i/2009-09-11/U3568P115T41D171674F757DT200910101
 
 ## 前言
 
-To be continued。
+元素居中是实际前端开发中常用的一种操作。元素居中分为垂直居中和水平居中，这篇文章就来详谈一下这两种居中怎么实现。
+
+
+### 水平居中
+
+
+### 垂直居中
+
+## Reference
+
+- [CSS Layout - Horizontal & Vertical Align](https://www.w3schools.com/css/css_align.asp)
+- [How to center things with style in CSS](https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/)
