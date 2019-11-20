@@ -24,6 +24,7 @@ XSS、CSRF
 
 Web应用的安全问题也是一个web开发人员需要了解的事，今天我们就来看一看常见的两种安全问题，`XSS`和`CSRF`。
 
+**因为对安全问题不够熟悉，读者如果发现问题请右下角小窗私聊或文章右上角修改按钮github提交pr。**
 
 ## XSS
 > Cross-site scripting (XSS) bugs are one of the most common and dangerous types of vulnerabilities in Web applications.These nasty buggers can allow your enemies to steal or modify user data in your apps.
@@ -39,7 +40,28 @@ Web应用的安全问题也是一个web开发人员需要了解的事，今天�
 
 > Cross-site scripting carried out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec up until 2007.（Wikipedia）
 
-### 实验内容
+
+
+### 常见XSS分类
+
+- Stored XSS Attacks：持久注入，注入数据库
+- Reflected XSS Attacks:注入的数据会由服务器返回或者直接跳转到另一个页面显示
+- DOM-based XSS Attacks：修改DOM
+
+### XSS注入方式
+
+- 表单注入
+- URL注入
+- 引用外部脚本
+
+### XSS避免
+
+- 同源策略
+- 白名单策略（内容安全策略，Content Safe Policy）
+- 表单验证
+- 拼凑字符串时验证来自querystring的变量
+
+### XSS Game实验内容
 
 大体记录一下实验内容吧。
 
@@ -142,8 +164,32 @@ https://xss-game.appspot.com/level6/frame#data:text/plain,alert('xss')
 
 ## CSRF
 
+> 跨站请求伪造（英语：Cross-site request forgery），也被称为 one-click attack 或者 session riding，通常缩写为 CSRF 或者 XSRF， 是一种挟制用户在当前已登录的Web应用程序上执行非本意的操作的攻击方法。跟跨网站脚本（XSS）相比，XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任。（Wikipedia）
+
+顾名思义，就是攻击者伪造请求。假如说用户在A网站登录了，这时候浏览器保存了登录信息，这段时间内用户又访问了B网站，B网站内存在一个A网站则请求（这个请求是攻击者伪造的），这样就属于跨站请求伪造。
+
+### 维基百科上的例子
+
+```html
+假如一家银行用以运行转账操作的URL地址如下： http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName
+
+那么，一个恶意攻击者可以在另一个网站上放置如下代码： <img src="http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman">
+
+如果有账户名为Alice的用户访问了恶意站点，而她之前刚访问过银行不久，登录信息尚未过期，那么她就会损失1000资金。
+
+这种恶意的网址可以有很多种形式，藏身于网页中的许多地方。此外，攻击者也不需要控制放置恶意网址的网站。例如他可以将这种地址藏在论坛，博客等任何用户生成内容的网站中。这意味着如果服务端没有合适的防御措施的话，用户即使访问熟悉的可信网站也有受攻击的危险。
+
+透过例子能够看出，攻击者并不能通过CSRF攻击来直接获取用户的账户控制权，也不能直接窃取用户的任何信息。他们能做到的，是欺骗用户浏览器，让其以用户的名义运行操作。
+```
+
+### 预防
+
+- 检查Referer字段，发起请求的来源。存在客户端伪造Referer的可能
+- 添加校验token（伪随机数）
 
 ## Reference
 
 - [Warning: You are entering the XSS game area](https://xss-game.appspot.com/)
 - [XSS跨站脚本攻击探讨总结](https://orzbox.github.io/our-tech/#/articles/XSS-Explain-1)
+- [Cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
+- [跨站请求伪造](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
