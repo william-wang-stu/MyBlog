@@ -26,6 +26,18 @@ Web应用的安全问题也是一个web开发人员需要了解的事，今天�
 
 **因为对安全问题不够熟悉，读者如果发现问题请右下角小窗私聊或文章右上角修改按钮github提交pr。**
 
+大体内容如下：
+
+- XSS
+  - 什么是XSS
+  - XSS分类
+  - XSS实例
+  - XSS避免
+- CSRF
+  - 什么是CSRF
+  - CSRF实例
+  - CSRF避免
+
 ## XSS
 > Cross-site scripting (XSS) bugs are one of the most common and dangerous types of vulnerabilities in Web applications.These nasty buggers can allow your enemies to steal or modify user data in your apps.
 
@@ -170,6 +182,8 @@ https://xss-game.appspot.com/level6/frame#data:text/plain,alert('xss')
 
 ### 维基百科上的例子
 
+前提是没有同源策略，Attackers才能使用银行的登录信息。
+
 ```html
 假如一家银行用以运行转账操作的URL地址如下： http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName
 
@@ -181,6 +195,9 @@ https://xss-game.appspot.com/level6/frame#data:text/plain,alert('xss')
 
 透过例子能够看出，攻击者并不能通过CSRF攻击来直接获取用户的账户控制权，也不能直接窃取用户的任何信息。他们能做到的，是欺骗用户浏览器，让其以用户的名义运行操作。
 ```
+
+因为同源策略不允许读取其他源的cookie，所以如何完成攻击呢？
+如果可以，使用XSS攻击加CSRF攻击就可以很好的完成。首先使用stored的XSS注入到数据库，然后显示到银行的网页，此时victim不小心点击的这个标签，就会发起请求了。
 
 ### 预防
 
