@@ -5,6 +5,7 @@ photo: https://storage.googleapis.com/ehimages/2017/11/27/img_c107d0bcc49e276237
 tags:
 - Docker
 categories:
+- Tools
 - Docker
 ---
 

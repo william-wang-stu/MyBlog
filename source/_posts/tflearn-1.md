@@ -5,7 +5,9 @@ photo : /2018/12/22/tflearn-1/tf.png
 tags:
 - Tensorflow
 - Python
-categories: Tensorflow
+categories:
+- AI
+- Tensorflow
 ---
 {% note default %}
 智能就是有学习能力。

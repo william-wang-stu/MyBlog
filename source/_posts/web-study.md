@@ -1,10 +1,11 @@
 ---
 title: web前端入门建议
 date: 2018-01-14 10:46:28
-photo: https://raw.githubusercontent.com/dwqs/fedHandlebook/master/images/web-tech-employed.jpg
+photo: http://pic1.win4000.com/wallpaper/2018-07-11/5b45cb6d71c41.jpg
 tags:
-- Web 前端
-categories: Web 前端
+- Front-End Development
+categories:
+- Front-End Development
 ---
 
 {% note default %}

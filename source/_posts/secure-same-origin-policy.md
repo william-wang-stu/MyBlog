@@ -1,5 +1,5 @@
 ---
-title: 同源策略和跨域请求
+title: Web安全系列：同源策略和跨域请求
 mathjax: false
 copyright: true
 comment: true

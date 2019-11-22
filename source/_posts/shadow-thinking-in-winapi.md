@@ -5,7 +5,9 @@ photo: https://stmed.net/sites/default/files/windows-8-wallpapers-30803-8681077.
 tags:
 - Windows API
 - C
-categories: Windows API
+categories:
+- Computer Science
+- Operating System
 ---
 
 
