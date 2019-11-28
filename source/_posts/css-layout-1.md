@@ -10,7 +10,7 @@ tags:
 categories:
 - Front-End Development
 - CSS
-photo: http://b-ssl.duitang.com/uploads/item/201807/04/20180704211620_siuMZ.png
+photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575534597&di=cca061ce6de103197c6ef12347d183c7&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201804%2F24%2F20180424214224_ZlLnV.png
 ---
 
 {% note primary %}
