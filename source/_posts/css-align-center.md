@@ -44,7 +44,7 @@ photo: http://i3.sinaimg.cn/gm/o/i/2009-09-11/U3568P115T41D171674F757DT200910101
 
 - **蓝色盒子**，将父容器设为`text-align:center`，div设为`display:inline-block`，适用于多个div水平居中。
 - 【推荐】**黄色盒子**，使用`margin:auto`属性设置（需要设置宽度）
-- 【推荐，常用于响应式开发，注意脱离文档流带来的问题】**绿色盒子**，父容器`position:relative`，div设置`position:absolute`和`left:50%`和`transform:translateX(-50%)`（或者margin-left:(-width/2)）
+- 【推荐，常用于响应式开发，注意脱离文档流带来的问题】**绿色盒子**，父容器`position:relative`，div设置`position:absolute`和`left:50%`和`transform:translateX(-50%)`
 - **绿色盒子**，父容器`position:relative`，div设置`position:absolute`和`left:50%`和`margin-left:(-width/2)`
 - 【极度推荐,响应式，无需计算margin】**粉色盒子**，父容器`display:flex`并`flex-direction:row`（默认），然后`justify-content:center`（要看主轴的方向）
 
