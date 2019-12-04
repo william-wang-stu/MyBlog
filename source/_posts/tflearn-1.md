@@ -1,7 +1,7 @@
 ---
 title: Tensorflow 学习笔记
 date: 2018-12-22 18:56:12
-photo : /2018/12/22/tflearn-1/tf.png
+photo : /tflearn-1/tf.png
 tags:
 - Tensorflow
 - Python

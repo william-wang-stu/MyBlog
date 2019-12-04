@@ -64,7 +64,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15748
 
 ### 0x2.3 同源策略的限制
 
-同源策略限制的是JavaScript的脚本，也就是说一些资源比如说CSS、HTML和动态加载的脚本就能够通过HTML标签跨域。[CSRF](/2019/11/18/secure-xss-csrf)就是利用了这一点。
+同源策略限制的是JavaScript的脚本，也就是说一些资源比如说CSS、HTML和动态加载的脚本就能够通过HTML标签跨域。[CSRF](secure-xss-csrf.html)就是利用了这一点。
 
 
 那么具体限制JavaScript的哪些行为呢？

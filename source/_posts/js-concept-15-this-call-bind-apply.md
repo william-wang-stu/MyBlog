@@ -246,7 +246,7 @@ sayAge() // TypeError: Cannot read property 'age' of undefined
 ## 相关话题
 
 ### 箭头函数的this
-箭头函数没有在函数调用创建函数执行上下文的时候创建`this`对象。详情请看[JavaScript 必知 33 个概念系列：执行上下文（栈帧）、作用域、闭包、this 之间的关系](/2019/11/17/js-concept-7-scope-2/)
+箭头函数没有在函数调用创建函数执行上下文的时候创建`this`对象。详情请看[JavaScript 必知 33 个概念系列：执行上下文（栈帧）、作用域、闭包、this 之间的关系](js-concept-7-scope-2.html)
 
 ## Reference
 

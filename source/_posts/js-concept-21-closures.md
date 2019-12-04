@@ -89,7 +89,7 @@ console.log(counter.value()); // logs 1
 
 ### 闭包作用域链
 
-关于作用域链可以查看以前的文章：[JavaScript必知33个概念系列：作用域](http://blog.scarboroughcoral.top/2019/11/14/js-concept-7-scope/)
+关于作用域链可以查看以前的文章：[JavaScript必知33个概念系列：作用域](http://blog.scarboroughcoral.topjs-concept-7-scope.html)
 
 每个闭包的作用域分为三个：
 - 闭包自己的作用域

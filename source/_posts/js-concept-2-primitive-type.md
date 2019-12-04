@@ -23,7 +23,10 @@ number、boolean、null、undefined、string、bigint、symbol
 
 ## 前言
 
-今天总结一下JS的原始类型，之前写过一篇文章，是关于JS的number类型的，关于IEEE754标准已经写过几篇文章了，这篇文章不会再提及。
+今天总结一下JS的原始类型，之前写过一篇文章，是关于JS的number类型的，关于IEEE754标准已经写过几篇文章了，这篇文章不会再提及。有兴趣的可以看一下这两篇文章：
+
+- [IEEE754 实例 ——JS 中的 Number 类型](/ieee754-float-instance-js.html)
+- [有关计算机浮点数的思考。](/float-think.html)
 
 
 ## Reference

@@ -46,7 +46,7 @@ photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=15531
 - 中值滤波
 > 说明：上述处理需要对边界点进行处理，2种方法
 
-模板在[DIP 中常见的核](/2019/03/14/digital-image-kernel-collection/)一文中总结过，如果不清楚概念可以查看一下。
+模板在[DIP 中常见的核](digital-image-kernel-collection.html)一文中总结过，如果不清楚概念可以查看一下。
 
 ### 任务解析
 

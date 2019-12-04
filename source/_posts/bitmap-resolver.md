@@ -208,9 +208,9 @@ for (size_t i = 0; i < itemCounts; i++)
 
 - 未对图像宽度非4倍数进行特殊处理。
 - 本文只对灰度图只做了24位模拟，没有转化为8位灰度图。
-- 文件头的字节对齐问题，相关文章[计算机的字节对齐](/2019/03/08/byte-alignment/)
+- 文件头的字节对齐问题，相关文章[计算机的字节对齐](byte-alignment.html)
 
-修正版本请查看[BMP文件的特殊宽度处理及字节对齐问题](/2019/03/08/bitmap-resolver-rectify/)
+修正版本请查看[BMP文件的特殊宽度处理及字节对齐问题](bitmap-resolver-rectify.html)
 
 {% endnote %}
 

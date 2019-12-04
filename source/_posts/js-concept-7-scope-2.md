@@ -23,7 +23,7 @@ photo: http://pic1.win4000.com/wallpaper/2018-03-15/5aaa256499442.jpg
 
 ## 前言
 
-上一篇文章[《JavaScript必知33个概念系列：作用域》](/2019/11/14/js-concept-7-scope/)总结的作用域问题，但是有一些关系还是没有整理清楚，本篇文章单独说明执行上下文（栈帧）、作用域、闭包、this之间的关系。
+上一篇文章[《JavaScript必知33个概念系列：作用域》](js-concept-7-scope.html)总结的作用域问题，但是有一些关系还是没有整理清楚，本篇文章单独说明执行上下文（栈帧）、作用域、闭包、this之间的关系。
 
 ## 执行上下文
 
@@ -91,7 +91,7 @@ count += add5(2)
 
 ## this
 
-`this`存在于当前执行上下文中，其引用会因绑定方式而决定，请看[JavaScript 必知 33 个概念系列：this、call、bind、apply](http://localhost:4000/2019/11/16/js-concept-15-this-call-bind-apply/)。
+`this`存在于当前执行上下文中，其引用会因绑定方式而决定，请看[JavaScript 必知 33 个概念系列：this、call、bind、apply](http://localhost:4000js-concept-15-this-call-bind-apply.html)。
 
 箭头函数创建执行上下文时不会创建`this`变量，所以内部访问变量时会沿着作用域链向上找。
 
