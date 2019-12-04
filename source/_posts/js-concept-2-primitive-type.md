@@ -23,4 +23,9 @@ number、boolean、null、undefined、string、bigint、symbol
 
 ## 前言
 
-To be continued。
+今天总结一下JS的原始类型，之前写过一篇文章，是关于JS的number类型的，关于IEEE754标准已经写过几篇文章了，这篇文章不会再提及。
+
+
+## Reference
+
+- [(Not) Everything in JavaScript is an Object](http://blog.brew.com.hk/not-everything-in-javascript-is-an-object/)
