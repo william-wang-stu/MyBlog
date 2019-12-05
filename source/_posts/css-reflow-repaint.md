@@ -9,7 +9,7 @@ tags:
 categories:
 - Front-End Development
 - CSS
-photo: http://b-ssl.duitang.com/uploads/item/201502/07/20150207165142_5uw5j.jpeg
+photo: http://inews.gtimg.com/newsapp_match/0/10894881922/0.jpg
 ---
 
 {% note primary %}
