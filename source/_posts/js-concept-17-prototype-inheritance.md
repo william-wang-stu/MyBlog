@@ -153,7 +153,7 @@ Function instanceof Object//true
 
 ## 如何实现原型继承
 
-总共分3步：
+总共分3步（这没有实现静态方法的继承）：
 
 1. `super.call(this)`
 2. `child.prototype=Object.create(super.prototype)`
@@ -174,7 +174,47 @@ Cat.prototype=Object.create(Animal.prototype);//#2，实现原型链继承
 Cat.prototype.constructor=Cat;//#3，设置构造函数
 ```
 
+### 静态的继承
 
+在ES6的`class-extends`方式中，你可以指定静态`static`的方法和属性，如下：
+
+```javascript
+class Animal{
+    constructor(){
+
+    }
+    static staticMethod(){
+        console.log("static method invoked!");
+    }
+}
+
+class Dog extends Animal{
+    constructor(){
+        super();
+    }
+}
+Dog.staticMethod();//static method invoked!
+```
+
+因为`Dog`函数本身没有这个方法，那么肯定在它的原型链上，问题是Dog的原型根据ES5的写法应该`Dog.__proto__===Function.prototype`为`true`，然而这个例子中`Dog.__proto__===Animal`为`true`，这说明上面ES5的继承方法缺少了静态继承，**补全以上代码的话应该有4步**：
+
+1. `super.call(this)`
+2. `child.prototype=Object.create(super.prototype)`
+3. `child.prototype.constructor=child`
+4. `child.__proto__=Animal`
+```javascript
+function Animal(name){
+    this.name=name;
+}
+
+function Cat(name,color){
+    Animal.call(this,name);//#1，构造父类属性
+    this.color=color;
+}
+Cat.prototype=Object.create(Animal.prototype);//#2，实现原型链继承
+Cat.prototype.constructor=Cat;//#3，设置构造函数
+Cat.__proto__=Animal//#4，实现静态继承
+```
 
 ## 头条面经的几个问题
 
