@@ -1,5 +1,5 @@
 ---
-title: 恶心心JS系列：JS的原型链属性隐藏规则
+title: 恶心心JavaScript系列：原型链属性隐藏规则
 mathjax: false
 copyright: true
 comment: true

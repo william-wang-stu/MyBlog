@@ -10,7 +10,7 @@ tags:
 categories:
 - Front-End Development
 - JavaScript
-photo: http://b-ssl.duitang.com/uploads/item/201604/27/20160427161550_CYyhJ.png
+photo: http://b-ssl.duitang.com/uploads/item/201807/04/20180704211620_siuMZ.png
 ---
 
 {% note primary %}
