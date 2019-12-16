@@ -236,10 +236,10 @@ sayAge() // TypeError: Cannot read property 'age' of undefined
 #### 判断套路
 
 1. 检查函数要在哪里被调用
-2. 函数左侧有无“.”，如果有，那么`this`就引用这个对象。
-3. 函数是否使用了`call,apply,bind`，如果有，那么`this`引用显示绑定的对象。
-4. 函数是否使用了`new`创建对象，如果有，那么`this`引用这个创建的对象。
-5. `this`是否在箭头函数内部，如果是，那么`this`有可能词法绑定，引用父亲作用域的`this`（产生了闭包
+2. `this`是否在箭头函数内部，如果是，那么`this`有可能词法绑定，引用父亲作用域的`this`（产生了闭包
+3. 函数是否使用了`new`创建对象，如果有，那么`this`引用这个创建的对象。
+4. 函数是否使用了`call,apply,bind`，如果有，那么`this`引用显示绑定的对象。
+5. 函数左侧有无“.”，如果有，那么`this`就引用这个对象。
 6. 你是否使用了`use strict`，如果有，那么`this`是`undefined`
 7. `this`引用了`window`对象
 
