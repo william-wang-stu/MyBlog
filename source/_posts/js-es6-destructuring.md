@@ -10,7 +10,7 @@ tags:
 categories:
 - Front-End Development
 - JavaScript
-photo: http://b-ssl.duitang.com/uploads/item/201807/04/20180704211620_siuMZ.png
+photo: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577278197&di=fd969460f99ad54dc89938126ff91de9&imgtype=jpg&er=1&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-11-05%2F5bdfd648e96fa.jpg
 ---
 
 {% note primary %}
